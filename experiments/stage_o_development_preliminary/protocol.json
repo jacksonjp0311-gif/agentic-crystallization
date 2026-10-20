@@ -1,0 +1,55 @@
+{
+  "bound": "Simultaneous current-epoch Hoeffding only if relevant channel is honest iid; no future-environment guarantee",
+  "calibration": "balanced labeled independent training seeds 1000-3999",
+  "config": {
+    "alpha": 0.05,
+    "anchor_samples": 384,
+    "anchor_unit_cost": 0.006,
+    "epochs": 24,
+    "hazard": 0.06,
+    "max_anchor_age": 4,
+    "primary_samples": 384,
+    "primary_unit_cost": 0.002,
+    "sensitivity": 0.85,
+    "specificity": 0.9,
+    "tasks_per_epoch": 80
+  },
+  "costs": "primary and anchor sample costs charged only on actual audit",
+  "count": 30,
+  "decision_inputs": "cue, observed primary/anchor sample means, anchor availability, time and policy state",
+  "epochs": 24,
+  "oracle": "hidden true gain used for scoring only after policy decision",
+  "policies": [
+    "guard",
+    "dual_periodic",
+    "anchor_periodic",
+    "anchor_risk",
+    "anchor_always",
+    "primary_risk",
+    "primary_periodic",
+    "baseline"
+  ],
+  "regimes": [
+    "stationary",
+    "abrupt",
+    "gradual",
+    "recurrent",
+    "deceptive_primary",
+    "misleading_cue",
+    "missing_anchor",
+    "deceptive_anchor",
+    "common_mode",
+    "unlearnable"
+  ],
+  "rows": 57600,
+  "source_hashes": {
+    "feedback_integrity.py": "57e5caf25e9ba2a80e536d4fa3b85e8fc4ef70b3ad42c1323fb444834fa1d083",
+    "risk_verification.py": "9b781b11c256d14c7e0840dbd464934851db0e1c9c348786e55cb67bf96c0c4b",
+    "stage_n.py": "abc3953a566c5da1db6948bde011ac2fd46af0cef9644e96c9bc63f8948468df",
+    "stage_o.py": "eaaa18d986d8c3da55cd7cbd984ccb15e104ba6bcc4208dfcb5f4c5cbfce59cf"
+  },
+  "stage": "O",
+  "start_seed": 4000,
+  "version": "2.3.0",
+  "worlds": 300
+}

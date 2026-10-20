@@ -1,0 +1,15 @@
+{
+  "source": "Desktop extracted Agentic_Crystallization_2.4",
+  "manifest_sha256": "d5b5160a477e0a412292014e7c96919d4fdb5abe7ef95945e270fca71ab10918",
+  "verified_manifest_files": 415,
+  "original_preserved": true,
+  "outer_complete_and_lightweight_zips": "Not found in searched Desktop, Downloads, and Codex locations; equivalence not established",
+  "baseline_tests": {
+    "run": 213,
+    "passed": 213
+  },
+  "git_history": "No .git directory in recovered package",
+  "algorithm_version": "2.4.0",
+  "distribution_version": "2.4.0rc1",
+  "note": "Historical __init__.__version__ remains 1.0.0; distribution metadata identifies packaging preview without rewriting historical source."
+}

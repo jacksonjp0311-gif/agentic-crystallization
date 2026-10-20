@@ -1,0 +1,14 @@
+{
+  "schema": "agentic-crystallization-stage-k-manifest/1",
+  "version": "1.9.0",
+  "rows": 840,
+  "worlds_per_regime": 120,
+  "stage": "development",
+  "sha256": {
+    "protocol.json": "20997d3fa0f5f77e6e8e4e8c4acc37ba6250d0f4ca90a69ed8e38994827a6c34",
+    "runs.csv": "86803aedeaa662ee17adf935dc35b36c5637bd2a1f32af22a5c59db7fc5fdb3b",
+    "summary.json": "5dc146000e0792ff8564d963d64c8aec8a6c38c7c03df1860992fafd41d10b1a"
+  },
+  "synthetic": true,
+  "model_execution": false
+}

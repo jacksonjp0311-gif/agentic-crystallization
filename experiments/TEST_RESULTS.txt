@@ -1,0 +1,20 @@
+test_additive_no_interaction (test_stage_a.StageATests.test_additive_no_interaction) ... ok
+test_mobius_triple (test_stage_a.StageATests.test_mobius_triple) ... ok
+test_reproducible (test_stage_a.StageATests.test_reproducible) ... ok
+test_selection_cardinality (test_stage_a.StageATests.test_selection_cardinality) ... ok
+test_additive_has_no_interaction (test_stage_b.TestStageB.test_additive_has_no_interaction) ... ok
+test_component_bounds (test_stage_b.TestStageB.test_component_bounds) ... ok
+test_determinism (test_stage_b.TestStageB.test_determinism) ... ok
+test_finite (test_stage_b.TestStageB.test_finite) ... ok
+test_misleading_is_not_causal (test_stage_b.TestStageB.test_misleading_is_not_causal) ... ok
+test_budget_and_censor (test_stage_d.StageDTests.test_budget_and_censor) ... ok
+test_independent_ablated (test_stage_d.StageDTests.test_independent_ablated) ... ok
+test_no_target_leak (test_stage_d.StageDTests.test_no_target_leak) ... ok
+test_repeatable (test_stage_d.StageDTests.test_repeatable) ... ok
+test_reproducible_files (test_stage_d.StageDTests.test_reproducible_files) ... ok
+test_restore_exact (test_stage_d.StageDTests.test_restore_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.298s
+
+OK

@@ -1,0 +1,22 @@
+{
+  "alpha": 0.05,
+  "bounds": {
+    "sensitivity": {
+      "estimate": 0.855,
+      "lower": 0.8279752377911359,
+      "n": 3000,
+      "upper": 0.882024762208864
+    },
+    "specificity": {
+      "estimate": 0.8996666666666666,
+      "lower": 0.8726419044578025,
+      "n": 3000,
+      "upper": 0.9266914288755307
+    }
+  },
+  "limitation": "Only under iid labeled calibration samples from the same cue mechanism.",
+  "n_per_class": 3000,
+  "not_estimated": "deployment hazard and post-calibration channel drift",
+  "start_seed": 1000,
+  "training_mechanism": "0.85 sensitivity, 0.90 specificity; balanced labeled independent samples"
+}

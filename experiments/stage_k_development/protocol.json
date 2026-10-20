@@ -1,0 +1,145 @@
+{
+  "actions": [
+    "baseline",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "alpha_per_world": 0.05,
+  "checkpoints": [
+    25,
+    50,
+    100,
+    200,
+    400,
+    800,
+    1600,
+    3200,
+    6400
+  ],
+  "counterexamples": "violated_shift intentionally lies about its bound; unknown_shift refuses certification",
+  "data_split": "Fresh world seed IDs separate from development and earlier v1.8 holdout. Same source draws for all policies, hidden target used for grading only.",
+  "finite_alpha_spend": "alpha/(K*J) two-sided at each checkpoint",
+  "fixed_alpha_spend": "alpha/K two-sided at final n only",
+  "known_action_costs": {
+    "a": 0.02,
+    "b": 0.02,
+    "baseline": 0.02,
+    "c": 0.02,
+    "d": 0.02,
+    "e": 0.02
+  },
+  "max_samples_per_action": 6400,
+  "numpy_version": "2.3.5",
+  "primary_endpoint": "Mean total evaluated action outcomes among worlds certified by both fixed and finite-grid rules for the same action",
+  "regimes": {
+    "bounded_shift": {
+      "assumption_valid": true,
+      "declared_shift": 0.08,
+      "eta": 0.08,
+      "p": [
+        0.25,
+        0.81,
+        0.34,
+        0.31,
+        0.23,
+        0.2
+      ]
+    },
+    "gradual_shift": {
+      "assumption_valid": true,
+      "declared_shift": 0.1,
+      "eta": "uniform_0_.10",
+      "p": [
+        0.25,
+        0.73,
+        0.37,
+        0.32,
+        0.21,
+        0.18
+      ]
+    },
+    "stationary_easy": {
+      "assumption_valid": true,
+      "declared_shift": 0.0,
+      "eta": 0.0,
+      "p": [
+        0.25,
+        0.86,
+        0.3,
+        0.28,
+        0.23,
+        0.19
+      ]
+    },
+    "stationary_near_tie": {
+      "assumption_valid": true,
+      "declared_shift": 0.0,
+      "eta": 0.0,
+      "p": [
+        0.5,
+        0.56,
+        0.55,
+        0.53,
+        0.49,
+        0.48
+      ]
+    },
+    "unknown_shift": {
+      "assumption_valid": null,
+      "declared_shift": null,
+      "eta": 0.08,
+      "p": [
+        0.25,
+        0.82,
+        0.34,
+        0.31,
+        0.23,
+        0.2
+      ]
+    },
+    "violated_shift": {
+      "assumption_valid": false,
+      "declared_shift": 0.02,
+      "eta": 0.92,
+      "p": [
+        0.25,
+        0.82,
+        0.28,
+        0.29,
+        0.22,
+        0.19
+      ]
+    },
+    "wide_valid_shift": {
+      "assumption_valid": true,
+      "declared_shift": 0.55,
+      "eta": 0.45,
+      "p": [
+        0.25,
+        0.82,
+        0.34,
+        0.3,
+        0.22,
+        0.19
+      ]
+    }
+  },
+  "research_boundary": "Controlled finite library, exact known costs, correct shift bounds required; no phase transition, no autonomous Pegasus run",
+  "schema": "agentic-crystallization-stage-k/1",
+  "secondary_endpoints": "world-level false best certificates, coverage, HOLD rate, regret, unbounded checkpoints, raw evidence count",
+  "seeds": {
+    "count": 120,
+    "last": 30119,
+    "start": 30000
+  },
+  "sequential_certificate_source_sha256": "149ebce6bbf3fc4debc45f6aa4b46524c8260c453f503cee6fbfef29a295cc4c",
+  "source_sampling": "iid task outcome vectors with Bernoulli(p_a) each arm; arm dependence not required by theorem",
+  "stage": "development",
+  "stage_k_source_sha256": "5f8031ae91f1a9d52aad77f189c7cd1ef111f9a926e21a014cf9d3eae39916dc",
+  "target_mechanism": "Q=(1-eta)P+eta B on joint task/outcome vectors; TV(Q,P)<=eta",
+  "unbounded_alpha_spend": "alpha/(K*j*(j+1)) two-sided at checkpoint j",
+  "version": "1.9.0"
+}

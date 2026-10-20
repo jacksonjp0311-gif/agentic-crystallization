@@ -1,0 +1,25 @@
+{
+  "certified_episodes": 12,
+  "credits_after": 613.9312,
+  "episodes": 12,
+  "false_certifications": 0,
+  "fresh_reactivation": 9,
+  "memory": {
+    "xor:0,3,4": {
+      "count": 2,
+      "last_certified": 8
+    },
+    "xor:3,4,6": {
+      "count": 7,
+      "last_certified": 12
+    },
+    "xor:3,5,6": {
+      "count": 1,
+      "last_certified": 10
+    }
+  },
+  "note": "Credits are rewards from EXTERNAL task deliveries minus evaluation cost; not a closed thermodynamic system.",
+  "regime": "recurrent",
+  "seed": 2020,
+  "state_digest": "2a46ac25179673c56422fc2771a3bff09f9a6b2d8d11ac348c91716ad6748a77"
+}

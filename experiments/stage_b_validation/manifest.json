@@ -1,0 +1,45 @@
+{
+  "schema": "agentic-crystallization-stage-b/1",
+  "version": "1.1.0",
+  "sizes": [
+    12,
+    18,
+    24
+  ],
+  "densities": [
+    0.0,
+    0.15,
+    0.3,
+    0.45,
+    0.6,
+    0.75,
+    0.9
+  ],
+  "seeds": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "families": [
+    "synergy",
+    "additive",
+    "misleading"
+  ],
+  "policies": [
+    "no_memory",
+    "cache",
+    "additive",
+    "same_estimates_linear",
+    "interaction"
+  ],
+  "train_per_world": 160,
+  "test_per_world": 30,
+  "candidate_hyperedges_per_world": "2*n, fixed independent of density",
+  "planted_hyperedges": "round(density*n) among first n candidates",
+  "interaction_order": 3,
+  "selection": "4 from 8 available",
+  "estimator": "ridge on identical fixed-budget random training observations; no oracle graph supplied",
+  "ridge": 1.0,
+  "limitations": "Synthetic planted triples; metadata is not a functional dependency; no time-evolving graph, repeated learning cycle, or criticality inference."
+}

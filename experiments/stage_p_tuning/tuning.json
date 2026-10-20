@@ -1,0 +1,101 @@
+{
+  "algorithm": "finite grid search then freeze; no post-hoc retuning",
+  "compared_regimes": [
+    "stationary",
+    "abrupt",
+    "gradual",
+    "recurrent",
+    "deceptive_primary",
+    "deceptive_anchor",
+    "common_mode",
+    "reference_corrupt",
+    "misleading_cue"
+  ],
+  "development_seed_range": [
+    4200,
+    4217
+  ],
+  "scored": [
+    {
+      "age": 3,
+      "false_fresh_certificates": 0,
+      "harmful": 109,
+      "mean_utility": 11.119613,
+      "score": 11.063543,
+      "use_cue": false
+    },
+    {
+      "age": 3,
+      "false_fresh_certificates": 0,
+      "harmful": 47,
+      "mean_utility": 9.480189,
+      "score": 9.456012,
+      "use_cue": true
+    },
+    {
+      "age": 4,
+      "false_fresh_certificates": 0,
+      "harmful": 72,
+      "mean_utility": 11.820337,
+      "score": 11.7833,
+      "use_cue": false
+    },
+    {
+      "age": 4,
+      "false_fresh_certificates": 0,
+      "harmful": 42,
+      "mean_utility": 10.128591,
+      "score": 10.106986,
+      "use_cue": true
+    },
+    {
+      "age": 6,
+      "false_fresh_certificates": 0,
+      "harmful": 432,
+      "mean_utility": 10.033523,
+      "score": 9.8113,
+      "use_cue": false
+    },
+    {
+      "age": 6,
+      "false_fresh_certificates": 0,
+      "harmful": 98,
+      "mean_utility": 10.402139,
+      "score": 10.351727,
+      "use_cue": true
+    },
+    {
+      "age": 8,
+      "false_fresh_certificates": 0,
+      "harmful": 240,
+      "mean_utility": 11.487322,
+      "score": 11.363866,
+      "use_cue": false
+    },
+    {
+      "age": 8,
+      "false_fresh_certificates": 0,
+      "harmful": 54,
+      "mean_utility": 11.184509,
+      "score": 11.156731,
+      "use_cue": true
+    }
+  ],
+  "selected": {
+    "age": 4,
+    "false_fresh_certificates": 0,
+    "harmful": 72,
+    "mean_utility": 11.820337,
+    "score": 11.7833,
+    "use_cue": false
+  },
+  "selection_criterion": "max mean utility -2 per-epoch harmed frequency; zero incorrect fresh certs on development valid-reference regimes",
+  "source_hashes": {
+    "adaptive_trust.py": "a1f999a5ba204f4e528c67cee9268cbc16d288ee13b159e6d118f3dc1cbd04fb",
+    "feedback_integrity.py": "4769648c327275aab12c92e9c720a1e050e511926c1c139c6030f2aa59682e67",
+    "risk_verification.py": "9b781b11c256d14c7e0840dbd464934851db0e1c9c348786e55cb67bf96c0c4b",
+    "stage_n.py": "abc3953a566c5da1db6948bde011ac2fd46af0cef9644e96c9bc63f8948468df",
+    "stage_o.py": "4960645092f5c6ddff832c18d743232c1d6e73258ca4caca3630bd697db336cb",
+    "stage_p.py": "a1d17e96d35038b1ddf6b6115372da9f30395d26e7bbee65e9c11a5194f6dc8f"
+  }
+}

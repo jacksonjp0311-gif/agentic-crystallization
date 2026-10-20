@@ -1,0 +1,77 @@
+{
+  "caveats": [
+    "synthetic planted XOR concepts, not Pegasus or real-world agents",
+    "source/validation/live distribution only justified within each simulated block",
+    "monitoring feedback observed only after middle block; one-block detection lag",
+    "lifetime error budget is per policy run; no global guarantee across independent simulation worlds",
+    "false feedback may invalidate drift detection",
+    "economic credits depend on external task reward and finite simulation horizon",
+    "new procedures restricted to prespecified finite XOR family"
+  ],
+  "config": {
+    "alpha_monitor": 0.025,
+    "alpha_promotion": 0.025,
+    "base": {
+      "alpha_total": 0.05,
+      "capacity": 4,
+      "deployment_scale": 2048.0,
+      "discovery_gain_gate": 0.08,
+      "discovery_size": 96,
+      "initial_credits": 150.0,
+      "maintenance_cost": 0.1,
+      "minimum_gain": 0.025,
+      "prediction_cost": 2e-05,
+      "revenue_per_correct": 0.2,
+      "sample_cost": 0.025,
+      "scout_accuracy_gate": 0.83,
+      "scout_size": 24,
+      "stale_after": 5,
+      "validation_looks": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "width": 8
+    },
+    "monitor_drop": 0.0,
+    "monitor_processing_cost": 0.0005
+  },
+  "epochs_per_world": 12,
+  "metrics": {
+    "efficiency": "selection/validation samples, prediction operations, reactivations",
+    "primary": "mean net surplus per epoch, relative to baselines",
+    "reactivity": "monitor alarms and missed true deterioration",
+    "safety": "false promotions on validation period, inappropriate and harmful deployment blocks"
+  },
+  "policies": [
+    "crystal",
+    "monitor_hold",
+    "memoryless",
+    "periodic",
+    "fixed_reuse",
+    "baseline"
+  ],
+  "regimes": [
+    "stationary",
+    "gradual",
+    "abrupt",
+    "recurrent",
+    "inverted_drift",
+    "unlearnable",
+    "missing_feedback",
+    "misleading_feedback"
+  ],
+  "source_hashes_sha256": {
+    "crystal_core.py": "a4c9a5a76a1d7815adce8f90f6dc23662c071dcb3a062b3d3d003c886cbe4449",
+    "renewal_core.py": "67bb929562dd82160dd6c2010c6ed5496ae4fb9da457684d60e5592bec8a662e",
+    "stage_l.py": "81fb5c2e96a907e19bef8334c009bdd83627c74a0bc30b61d9c4fb913caf29da",
+    "stage_m.py": "7b62d5f98c57fd79c8050e607a6d654f8d79fe7e439a59791ceeeaba7b857dd9"
+  },
+  "stage": "M",
+  "start_seed": 81000,
+  "status": "synthetic comparative experiment",
+  "version": "2.1.0",
+  "warning": "feedback is delayed; no guarantee against future shift, absent labels, or adversarially misleading labels",
+  "worlds": 8
+}

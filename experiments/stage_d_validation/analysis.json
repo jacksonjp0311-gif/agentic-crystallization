@@ -1,0 +1,34 @@
+{
+  "related": {
+    "worlds": 600,
+    "baseline_success": 0.1,
+    "cluster_success": 0.46166666666666667,
+    "sham_success": 0.09333333333333334,
+    "delta": 0.3616666666666667,
+    "delta_ci": [
+      0.32,
+      0.405
+    ],
+    "saved": 7.831666666666667,
+    "saved_ci": [
+      6.851666666666667,
+      8.866916666666668
+    ]
+  },
+  "unrelated": {
+    "worlds": 600,
+    "baseline_success": 0.11,
+    "cluster_success": 0.0,
+    "sham_success": 0.12833333333333333,
+    "delta": -0.11,
+    "delta_ci": [
+      -0.135,
+      -0.085
+    ],
+    "saved": -1.8966666666666667,
+    "saved_ci": [
+      -2.41675,
+      -1.3849583333333333
+    ]
+  }
+}

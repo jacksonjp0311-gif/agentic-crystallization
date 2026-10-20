@@ -1,0 +1,52 @@
+{
+  "adaptive_equals_periodic_in_holdout": true,
+  "all_corrupt": {
+    "triad_alarms": 0,
+    "triad_incorrect_fresh": 320
+  },
+  "archived_v2.3_zip_sha256": "9b638b1cacc033869e3d3daf159fdc66885eb840694c472354e6988a22c135a5",
+  "common_mode": {
+    "legacy_incorrect_fresh": 402,
+    "legacy_utility": -11.31093,
+    "triad_alarms": 479,
+    "triad_incorrect_fresh": 0,
+    "triad_utility": 3.16017
+  },
+  "development_seeds": [
+    4200,
+    4217
+  ],
+  "full_tests_passed": 213,
+  "historical_tests_preserved": 197,
+  "holdout_policy_epoch_records": 199680,
+  "holdout_replay_byte_identical": true,
+  "holdout_source_frozen": true,
+  "holdout_worlds": 1040,
+  "known_limits": [
+    "The reference source honesty is a declared assumption, not learned truth.",
+    "All channels sharing the same hidden error remain unidentifiable.",
+    "The added reference reduces utility in most honest regimes.",
+    "Tuning collapsed to simple periodic verification; extra scheduling complexity did not earn its place.",
+    "No independent real world or Pegasus validation; stale reuse has no fresh statistical certificate.",
+    "SHA256 detects accidental alteration but is not an authenticity signature.",
+    "PowerShell script is provided but was not run under Windows in this container."
+  ],
+  "pdf_pages": 11,
+  "release_scope": "standalone bounded synthetic research, NOT real Pegasus integration or verified self-sustaining adaptation",
+  "replication": {
+    "triad_all_corrupt_incorrect_fresh": 160,
+    "triad_common_mode_incorrect_fresh": 0
+  },
+  "replication_policy_epoch_records": 99840,
+  "replication_replay_byte_identical": true,
+  "replication_worlds": 520,
+  "selected_policy_params": {
+    "age": 4,
+    "false_fresh_certificates": 0,
+    "harmful": 72,
+    "mean_utility": 11.820337,
+    "score": 11.7833,
+    "use_cue": false
+  },
+  "version": "2.4.0"
+}

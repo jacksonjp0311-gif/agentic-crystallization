@@ -1,0 +1,37 @@
+test_additive_no_interaction (test_stage_a.StageATests.test_additive_no_interaction) ... ok
+test_mobius_triple (test_stage_a.StageATests.test_mobius_triple) ... ok
+test_reproducible (test_stage_a.StageATests.test_reproducible) ... ok
+test_selection_cardinality (test_stage_a.StageATests.test_selection_cardinality) ... ok
+test_additive_has_no_interaction (test_stage_b.TestStageB.test_additive_has_no_interaction) ... ok
+test_component_bounds (test_stage_b.TestStageB.test_component_bounds) ... ok
+test_determinism (test_stage_b.TestStageB.test_determinism) ... ok
+test_finite (test_stage_b.TestStageB.test_finite) ... ok
+test_misleading_is_not_causal (test_stage_b.TestStageB.test_misleading_is_not_causal) ... ok
+test_budget_and_censor (test_stage_d.StageDTests.test_budget_and_censor) ... ok
+test_independent_ablated (test_stage_d.StageDTests.test_independent_ablated) ... ok
+test_no_target_leak (test_stage_d.StageDTests.test_no_target_leak) ... ok
+test_repeatable (test_stage_d.StageDTests.test_repeatable) ... ok
+test_reproducible_files (test_stage_d.StageDTests.test_reproducible_files) ... ok
+test_restore_exact (test_stage_d.StageDTests.test_restore_exact) ... ok
+test_budget_censor (test_stage_e.StageETests.test_budget_censor) ... ok
+test_determinism (test_stage_e.StageETests.test_determinism) ... ok
+test_equal_first_cost (test_stage_e.StageETests.test_equal_first_cost) ... ok
+test_gate_training_independent (test_stage_e.StageETests.test_gate_training_independent) ... ok
+test_hidden_target (test_stage_e.StageETests.test_hidden_target) ... ok
+test_repeatable_files (test_stage_e.StageETests.test_repeatable_files) ... ok
+test_deterministic_run (test_stage_f.StageFTests.test_deterministic_run) ... ok
+test_hidden_target_not_in_model (test_stage_f.StageFTests.test_hidden_target_not_in_model) ... ok
+test_negative_transfer_not_forced (test_stage_f.StageFTests.test_negative_transfer_not_forced) ... ok
+test_no_probe_bayesian_equivalence (test_stage_f.StageFTests.test_no_probe_bayesian_equivalence) ... ok
+test_online_probe_budget (test_stage_f.StageFTests.test_online_probe_budget) ... ok
+test_bayes_cue (test_stage_g.StageGTests.test_bayes_cue) ... ok
+test_budget_and_probe_charge (test_stage_g.StageGTests.test_budget_and_probe_charge) ... ok
+test_deterministic (test_stage_g.StageGTests.test_deterministic) ... ok
+test_expected_value_exact (test_stage_g.StageGTests.test_expected_value_exact) ... ok
+test_probabilities_normalized (test_stage_g.StageGTests.test_probabilities_normalized) ... ok
+test_probe_not_worse_in_model_expectation (test_stage_g.StageGTests.test_probe_not_worse_in_model_expectation) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.060s
+
+OK

@@ -1,0 +1,59 @@
+{
+  "alpha_semantics": "alpha_total is lifetime alpha of one controller run; independent worlds restart alpha spending",
+  "code_sha256": {
+    "crystal_core.py": "a4c9a5a76a1d7815adce8f90f6dc23662c071dcb3a062b3d3d003c886cbe4449",
+    "stage_l.py": "81fb5c2e96a907e19bef8334c009bdd83627c74a0bc30b61d9c4fb913caf29da"
+  },
+  "config": {
+    "alpha_total": 0.05,
+    "capacity": 4,
+    "deployment_scale": 2048.0,
+    "discovery_gain_gate": 0.08,
+    "discovery_size": 96,
+    "initial_credits": 50.0,
+    "maintenance_cost": 0.1,
+    "minimum_gain": 0.025,
+    "prediction_cost": 2e-05,
+    "revenue_per_correct": 0.2,
+    "sample_cost": 0.025,
+    "scout_accuracy_gate": 0.83,
+    "scout_size": 24,
+    "stale_after": 5,
+    "validation_looks": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "width": 8
+  },
+  "epochs": 12,
+  "known_limitations": [
+    "tiny planted parity family",
+    "task family source known to simulator only",
+    "shift bound supplied by experimental protocol not learned",
+    "rewards replenish credits from EXTERNAL tasks",
+    "no unconditional perpetual viability guarantee",
+    "simulation not real Pegasus"
+  ],
+  "policies": [
+    "crystal",
+    "memoryless",
+    "reuse_only",
+    "baseline"
+  ],
+  "primary_outcome": "mean paired net utility per epoch on a held-out deployment stream",
+  "regimes": [
+    "stationary",
+    "recurrent",
+    "abrupt",
+    "noise",
+    "bounded_shift",
+    "unknown_shift",
+    "false_shift"
+  ],
+  "seed_count": 40,
+  "seed_first": 80000,
+  "stage": "L",
+  "version": "2.0.0"
+}

@@ -1,0 +1,604 @@
+{
+  "comparisons": {
+    "abrupt": {
+      "crystal_minus_baseline": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            37494.4,
+            37548.8
+          ],
+          "mean": 37521.6,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            1902.4,
+            1956.8
+          ],
+          "mean": 1929.6,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            1017.230821,
+            1027.844139
+          ],
+          "mean": 1022.350797,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_memoryless": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            -69744.0,
+            -69744.0
+          ],
+          "mean": -69744,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -504.0,
+            -504.0
+          ],
+          "mean": -504,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            0.849573,
+            0.849573
+          ],
+          "mean": 0.849573,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_reuse_only": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            23755.2,
+            23801.6
+          ],
+          "mean": 23779.2,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -3099.2,
+            -3054.4
+          ],
+          "mean": -3076.8,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            772.497016,
+            781.977027
+          ],
+          "mean": 777.120368,
+          "units": "independently seeded world"
+        }
+      }
+    },
+    "bounded_shift": {
+      "crystal_minus_baseline": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            28675.2,
+            28779.2
+          ],
+          "mean": 28726.4,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            2131.2,
+            2235.2
+          ],
+          "mean": 2182.4,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            948.863789,
+            960.900552
+          ],
+          "mean": 954.847123,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_memoryless": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            -78888.0,
+            -78888.0
+          ],
+          "mean": -78888,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -600.0,
+            -600.0
+          ],
+          "mean": -600,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            1.173147,
+            1.173147
+          ],
+          "mean": 1.173147,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_reuse_only": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            16377.6,
+            16443.2
+          ],
+          "mean": 16409.6,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -1430.4,
+            -1364.8
+          ],
+          "mean": -1398.4,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            399.514307,
+            407.440995
+          ],
+          "mean": 403.360984,
+          "units": "independently seeded world"
+        }
+      }
+    },
+    "false_shift": {
+      "crystal_minus_baseline": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            10203.2,
+            10254.4
+          ],
+          "mean": 10228.8,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            1467.2,
+            1518.4
+          ],
+          "mean": 1492.8,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            -949.760381,
+            -939.083747
+          ],
+          "mean": -944.360381,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_memoryless": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            -88104.0,
+            -88078.4
+          ],
+          "mean": -88091.2,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -744.0,
+            -718.4
+          ],
+          "mean": -731.2,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            -0.733171,
+            3.416816
+          ],
+          "mean": 1.403485,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_reuse_only": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            123.2,
+            156.8
+          ],
+          "mean": 139.2,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            123.2,
+            156.8
+          ],
+          "mean": 139.2,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            61.229731,
+            80.813117
+          ],
+          "mean": 71.859768,
+          "units": "independently seeded world"
+        }
+      }
+    },
+    "noise": {
+      "crystal_minus_baseline": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            65014.4,
+            65392.0
+          ],
+          "mean": 65208,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            3862.4,
+            4235.2
+          ],
+          "mean": 4056,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            498.456285,
+            507.216347
+          ],
+          "mean": 502.86632,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_memoryless": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            -43896.0,
+            -43896.0
+          ],
+          "mean": -43896,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -216.0,
+            -216.0
+          ],
+          "mean": -216,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            0.431493,
+            0.431493
+          ],
+          "mean": 0.431493,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_reuse_only": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            52500.8,
+            52872.0
+          ],
+          "mean": 52692.8,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            84.8,
+            443.2
+          ],
+          "mean": 276.8,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            -1.129787,
+            -0.355835
+          ],
+          "mean": -0.756155,
+          "units": "independently seeded world"
+        }
+      }
+    },
+    "recurrent": {
+      "crystal_minus_baseline": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            28342.4,
+            28408.0
+          ],
+          "mean": 28374.4,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            1798.4,
+            1864.0
+          ],
+          "mean": 1830.4,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            1016.411027,
+            1026.951019
+          ],
+          "mean": 1021.597709,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_memoryless": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            -78888.0,
+            -78888.0
+          ],
+          "mean": -78888,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -600.0,
+            -600.0
+          ],
+          "mean": -600,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            1.173147,
+            1.173147
+          ],
+          "mean": 1.173147,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_reuse_only": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            16230.4,
+            16265.6
+          ],
+          "mean": 16248,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -1577.6,
+            -1542.4
+          ],
+          "mean": -1560,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            428.874595,
+            435.987899
+          ],
+          "mean": 432.481253,
+          "units": "independently seeded world"
+        }
+      }
+    },
+    "stationary": {
+      "crystal_minus_baseline": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            10344.0,
+            10401.6
+          ],
+          "mean": 10372.8,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            1609.6,
+            1664.0
+          ],
+          "mean": 1636.8,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            1017.504397,
+            1027.99104
+          ],
+          "mean": 1022.614379,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_memoryless": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            -96888.0,
+            -96888.0
+          ],
+          "mean": -96888,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            -792.0,
+            -792.0
+          ],
+          "mean": -792,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            1.719813,
+            1.719813
+          ],
+          "mean": 1.719813,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_reuse_only": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            264.0,
+            264.0
+          ],
+          "mean": 264,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            264.0,
+            264.0
+          ],
+          "mean": 264,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            -0.642107,
+            -0.642107
+          ],
+          "mean": -0.642107,
+          "units": "independently seeded world"
+        }
+      }
+    },
+    "unknown_shift": {
+      "crystal_minus_baseline": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_memoryless": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "units": "independently seeded world"
+        }
+      },
+      "crystal_minus_reuse_only": {
+        "prediction_ops_per_world": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0,
+          "units": "independently seeded world"
+        },
+        "task_observations_per_world": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0,
+          "units": "independently seeded world"
+        },
+        "utility_per_epoch": {
+          "ci_95_descriptive": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "units": "independently seeded world"
+        }
+      }
+    }
+  },
+  "failure_controls": {
+    "abrupt": {
+      "certificates": 480,
+      "false_certificates": 0,
+      "mean_final_credits": 611.609568
+    },
+    "bounded_shift": {
+      "certificates": 480,
+      "false_certificates": 0,
+      "mean_final_credits": 588.280472
+    },
+    "false_shift": {
+      "certificates": 440,
+      "false_certificates": 440,
+      "mean_final_credits": 36.970424
+    },
+    "noise": {
+      "certificates": 240,
+      "false_certificates": 0,
+      "mean_final_credits": 406.37584
+    },
+    "recurrent": {
+      "certificates": 480,
+      "false_certificates": 0,
+      "mean_final_credits": 615.572512
+    },
+    "stationary": {
+      "certificates": 480,
+      "false_certificates": 0,
+      "mean_final_credits": 622.172544
+    },
+    "unknown_shift": {
+      "certificates": 0,
+      "false_certificates": 0,
+      "mean_final_credits": 356.7
+    }
+  },
+  "method": "Paired bootstrap with 6000 replicates on independently seeded world means. Descriptive, not preregistered confirmatory confidence intervals.",
+  "n_rows": 13440,
+  "n_worlds": 40
+}

@@ -1,0 +1,380 @@
+[
+  {
+    "scenario": "iid_related",
+    "n": 200,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.13333333333333333,
+    "certified_gain_rate": 0.275,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.06678898869583333,
+    "mean_greedy_regret": 0.0091091387875,
+    "mean_robust_minus_greedy_utility": -0.057679849925,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.067075,
+      -0.048744
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "iid_related",
+    "n": 1000,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.25,
+    "certified_gain_rate": 0.5041666666666667,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.025025792016666666,
+    "mean_greedy_regret": 0.005220131891666667,
+    "mean_robust_minus_greedy_utility": -0.0198056601375,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.022606,
+      -0.016998
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "iid_related",
+    "n": 6400,
+    "worlds": 240,
+    "joint_coverage": 0.9958333333333333,
+    "certified_best_rate": 0.25,
+    "certified_gain_rate": 0.8583333333333333,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.0056687199625,
+    "mean_greedy_regret": 0.0007936861166666667,
+    "mean_robust_minus_greedy_utility": -0.004875033833333333,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.006531,
+      -0.003427
+    ],
+    "certified_positive_interactions": 60,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "iid_unrelated",
+    "n": 200,
+    "worlds": 240,
+    "joint_coverage": 0.9958333333333333,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.016666666666666666,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.004166666666666667,
+    "mean_robust_regret": 0.14062707388333334,
+    "mean_greedy_regret": 0.0006204699958333333,
+    "mean_robust_minus_greedy_utility": -0.140006603875,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.142756,
+      -0.136971
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "iid_unrelated",
+    "n": 1000,
+    "worlds": 240,
+    "joint_coverage": 0.9958333333333333,
+    "certified_best_rate": 0.9,
+    "certified_gain_rate": 0.9208333333333333,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.010728101408333333,
+    "mean_greedy_regret": 0.0,
+    "mean_robust_minus_greedy_utility": -0.0107281014125,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.015465,
+      -0.006233
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "iid_unrelated",
+    "n": 6400,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 1.0,
+    "certified_gain_rate": 1.0,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.0,
+    "mean_greedy_regret": 0.0,
+    "mean_robust_minus_greedy_utility": 0.0,
+    "robust_minus_greedy_bootstrap_95pct": [
+      0.0,
+      0.0
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "bounded_shift",
+    "n": 200,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.008333333333333333,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.12261107255833334,
+    "mean_greedy_regret": 0.0062797399166666665,
+    "mean_robust_minus_greedy_utility": -0.11633133265416666,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.129687,
+      -0.10454
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "bounded_shift",
+    "n": 1000,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.0875,
+    "certified_gain_rate": 0.22916666666666666,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.0633978194375,
+    "mean_greedy_regret": 0.004008086725,
+    "mean_robust_minus_greedy_utility": -0.059389732729166665,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.06798,
+      -0.051571
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "bounded_shift",
+    "n": 6400,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.25,
+    "certified_gain_rate": 0.26666666666666666,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.055341123025,
+    "mean_greedy_regret": 0.0008168974875,
+    "mean_robust_minus_greedy_utility": -0.054524225554166666,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.062058,
+      -0.04767
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "wide_valid_shift",
+    "n": 200,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.0,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.12916666666666668,
+    "mean_robust_regret": 0.08634865629583333,
+    "mean_greedy_regret": 0.0314589003625,
+    "mean_robust_minus_greedy_utility": -0.0548897559125,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.061702,
+      -0.048159
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "wide_valid_shift",
+    "n": 1000,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.0,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.12083333333333333,
+    "mean_robust_regret": 0.08634865629583333,
+    "mean_greedy_regret": 0.032063323475,
+    "mean_robust_minus_greedy_utility": -0.054285332829166665,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.061325,
+      -0.04774
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "wide_valid_shift",
+    "n": 6400,
+    "worlds": 240,
+    "joint_coverage": 1.0,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.0,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.15416666666666667,
+    "mean_robust_regret": 0.08634865629583333,
+    "mean_greedy_regret": 0.032788108808333334,
+    "mean_robust_minus_greedy_utility": -0.0535605475125,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.060521,
+      -0.047157
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "violated_shift",
+    "n": 200,
+    "worlds": 240,
+    "joint_coverage": 0.2,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.05416666666666667,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 13,
+    "greedy_harm_rate": 0.9791666666666666,
+    "mean_robust_regret": 0.1624431584,
+    "mean_greedy_regret": 0.21357932544583333,
+    "mean_robust_minus_greedy_utility": 0.05113616706666667,
+    "robust_minus_greedy_bootstrap_95pct": [
+      0.045585,
+      0.056492
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "violated_shift",
+    "n": 1000,
+    "worlds": 240,
+    "joint_coverage": 0.0,
+    "certified_best_rate": 0.24583333333333332,
+    "certified_gain_rate": 0.3,
+    "certified_best_wrong_count": 59,
+    "certified_harm_count": 72,
+    "greedy_harm_rate": 0.9833333333333333,
+    "mean_robust_regret": 0.18845456059166665,
+    "mean_greedy_regret": 0.219916205,
+    "mean_robust_minus_greedy_utility": 0.03146164442083333,
+    "robust_minus_greedy_bootstrap_95pct": [
+      0.028479,
+      0.034458
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "violated_shift",
+    "n": 6400,
+    "worlds": 240,
+    "joint_coverage": 0.0,
+    "certified_best_rate": 0.25,
+    "certified_gain_rate": 0.49583333333333335,
+    "certified_best_wrong_count": 60,
+    "certified_harm_count": 119,
+    "greedy_harm_rate": 0.9958333333333333,
+    "mean_robust_regret": 0.19802065472916666,
+    "mean_greedy_regret": 0.22506168284583333,
+    "mean_robust_minus_greedy_utility": 0.02704102812083333,
+    "robust_minus_greedy_bootstrap_95pct": [
+      0.022991,
+      0.031144
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "unknown_shift",
+    "n": 200,
+    "worlds": 240,
+    "joint_coverage": null,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.0,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.125112050575,
+    "mean_greedy_regret": 0.006592444883333333,
+    "mean_robust_minus_greedy_utility": -0.11851960571666667,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.132076,
+      -0.105911
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "unknown_shift",
+    "n": 1000,
+    "worlds": 240,
+    "joint_coverage": null,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.0,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.125112050575,
+    "mean_greedy_regret": 0.0033852707,
+    "mean_robust_minus_greedy_utility": -0.1217267799,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.134815,
+      -0.109608
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  },
+  {
+    "scenario": "unknown_shift",
+    "n": 6400,
+    "worlds": 240,
+    "joint_coverage": null,
+    "certified_best_rate": 0.0,
+    "certified_gain_rate": 0.0,
+    "certified_best_wrong_count": 0,
+    "certified_harm_count": 0,
+    "greedy_harm_rate": 0.0,
+    "mean_robust_regret": 0.125112050575,
+    "mean_greedy_regret": 0.0008628949166666666,
+    "mean_robust_minus_greedy_utility": -0.12424915569583334,
+    "robust_minus_greedy_bootstrap_95pct": [
+      -0.136133,
+      -0.111427
+    ],
+    "certified_positive_interactions": 0,
+    "false_interaction_signs": 0,
+    "meaning": "World-level descriptive means; certified guarantees conditional on joint coverage and valid TV bound."
+  }
+]

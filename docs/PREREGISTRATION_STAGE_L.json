@@ -1,0 +1,40 @@
+{
+  "co_primary": "Paired proposal prediction operations and query counts; reactivations; false certifications",
+  "code_sha256": {
+    "crystal_core.py": "a4c9a5a76a1d7815adce8f90f6dc23662c071dcb3a062b3d3d003c886cbe4449",
+    "stage_l.py": "81fb5c2e96a907e19bef8334c009bdd83627c74a0bc30b61d9c4fb913caf29da"
+  },
+  "epochs": 12,
+  "experiment": "Stage L independent holdout",
+  "freezing_note": "Development cohort seeds 1000..1011 inspected; no changes to source after this seal before holdout.",
+  "frozen_before_holdout": true,
+  "policies": [
+    "crystal",
+    "memoryless",
+    "reuse_only",
+    "baseline"
+  ],
+  "primary_comparison": "Paired mean net utility (crystal minus memoryless) on recurrent tasks, world=independent unit",
+  "regimes": [
+    "stationary",
+    "recurrent",
+    "abrupt",
+    "noise",
+    "bounded_shift",
+    "unknown_shift",
+    "false_shift"
+  ],
+  "release": "2.0.0",
+  "safety_controls": "unlearnable arity-4 parity, unknown shift HOLD, invalid shift anti-correlated deployed target",
+  "secondary_comparison": "crystal minus reuse_only in recurrent and abrupt tasks",
+  "seed_count": 40,
+  "seed_first": 80000,
+  "statistical_note": "World-bootstrap intervals are descriptive; lifetime alpha=0.05 applies per 12-episode trajectory under fresh conditional IID, valid direct gain-shift bounds and independent validation; no empirical guarantees outside assumptions.",
+  "thresholds": {
+    "allowed_false_certifications_valid_shift": 0,
+    "complete_loop": 12,
+    "credits_nonnegative": true,
+    "memory_capacity": 4,
+    "retain_plus_reactivate": true
+  }
+}

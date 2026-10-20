@@ -1,0 +1,48 @@
+{
+  "config": {
+    "alpha": 0.05,
+    "cost_per_observation": 0.002,
+    "epochs": 24,
+    "harm_magnitude": 0.35,
+    "hazard": 0.06,
+    "max_age": 4,
+    "samples": 384,
+    "sensitivity": 0.85,
+    "specificity": 0.9,
+    "tasks_per_epoch": 80
+  },
+  "count": 50,
+  "epochs": 24,
+  "guarantee": "Simultaneous current-epoch certification only under honest iid audit samples; stale reuse has no guarantee",
+  "oracle": "Hidden true gains used only for scoring, never for decision",
+  "policies": [
+    "risk",
+    "always",
+    "periodic",
+    "never",
+    "cue_switch",
+    "monitor_hold",
+    "baseline"
+  ],
+  "regimes": [
+    "stationary",
+    "abrupt",
+    "unannounced_abrupt",
+    "gradual",
+    "recurrent",
+    "missing_cue",
+    "misleading_cue",
+    "deceptive_audit",
+    "unlearnable"
+  ],
+  "rows": 75600,
+  "source_hashes": {
+    "risk_verification.py": "9b781b11c256d14c7e0840dbd464934851db0e1c9c348786e55cb67bf96c0c4b",
+    "stage_n.py": "abc3953a566c5da1db6948bde011ac2fd46af0cef9644e96c9bc63f8948468df"
+  },
+  "stage": "N",
+  "start_seed": 7000,
+  "version": "2.2",
+  "warning_model": "Fixed hazard/sensitivity/specificity assumed; not calibrated on these worlds",
+  "worlds": 450
+}

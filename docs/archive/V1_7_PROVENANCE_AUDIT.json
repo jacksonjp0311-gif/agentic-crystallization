@@ -1,0 +1,12 @@
+{
+  "version": "1.8",
+  "prior_zip_sha256": "d1349be479205ace81c9e3f9de756f6064a38bede4c9b44c35fde3060c0b54c5",
+  "prior_zip_testzip": "pass",
+  "prior_v1_7_manifest_entries": 110,
+  "prior_pdf_expected_sha256": "708ba00df0e517a180d12e0481be0cdb7d8c491d2b9f91675e01ebc3e3f7c9c8",
+  "prior_pdf_zip_sha256": "708ba00df0e517a180d12e0481be0cdb7d8c491d2b9f91675e01ebc3e3f7c9c8",
+  "prior_pdf_working_copy_sha256": "789b25c68b4083d97084b84d61f42c106f908168259f0f1ce557d003b040d27e",
+  "working_copy_matches_manifest": false,
+  "archive_matches_manifest": true,
+  "historical_action": "Preserved original ZIP bytes and unpacked verified ZIP into v1.8. Did not rewrite historical receipts."
+}

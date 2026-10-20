@@ -1,0 +1,321 @@
+{
+  "NOTES": {
+    "conditional": "False-cert claims apply only if independent reference is honest and other stated assumptions hold",
+    "intervals": "descriptive percentile bootstrap 3000, not preregistered inferential confidence",
+    "source": "stage_p_holdout/runs.csv",
+    "tuning": "eight pre-holdout configurations tested on disjoint development seeds",
+    "unit_of_resampling": "seed/world, paired across policies"
+  },
+  "abrupt": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -2.528,
+      "paired_bootstrap_95": [
+        -2.704,
+        -2.2971
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -4.2674,
+      "paired_bootstrap_95": [
+        -4.4274,
+        -4.1557
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "all_corrupt": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -2.6446,
+      "paired_bootstrap_95": [
+        -2.7467,
+        -2.5457
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -4.2965,
+      "paired_bootstrap_95": [
+        -4.4324,
+        -4.214
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "common_mode": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": 14.4711,
+      "paired_bootstrap_95": [
+        14.3644,
+        14.5774
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": 12.8192,
+      "paired_bootstrap_95": [
+        12.6733,
+        12.9067
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "deceptive_anchor": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -1.3031,
+      "paired_bootstrap_95": [
+        -1.3742,
+        -1.2042
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -24.4267,
+      "paired_bootstrap_95": [
+        -24.4267,
+        -24.4267
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "deceptive_primary": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -1.3322,
+      "paired_bootstrap_95": [
+        -1.4343,
+        -1.2238
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": 12.8775,
+      "paired_bootstrap_95": [
+        12.7317,
+        12.9942
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "gradual": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -5.0311,
+      "paired_bootstrap_95": [
+        -5.3186,
+        -4.7409
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -7.7555,
+      "paired_bootstrap_95": [
+        -8.2101,
+        -7.2767
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "misleading_cue": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": 3.3499,
+      "paired_bootstrap_95": [
+        3.2286,
+        3.4758
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -4.224,
+      "paired_bootstrap_95": [
+        -4.224,
+        -4.224
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "missing_anchor": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -3.1843,
+      "paired_bootstrap_95": [
+        -3.2768,
+        -3.0652
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -23.2479,
+      "paired_bootstrap_95": [
+        -23.3694,
+        -23.0997
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "missing_reference": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -18.0597,
+      "paired_bootstrap_95": [
+        -18.2147,
+        -17.8523
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -19.7991,
+      "paired_bootstrap_95": [
+        -19.935,
+        -19.6437
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "recurrent": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -10.2583,
+      "paired_bootstrap_95": [
+        -10.8498,
+        -9.6653
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -4.389,
+      "paired_bootstrap_95": [
+        -4.6658,
+        -4.224
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "reference_corrupt": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -22.6581,
+      "paired_bootstrap_95": [
+        -22.8135,
+        -22.4371
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -24.3975,
+      "paired_bootstrap_95": [
+        -24.5142,
+        -24.2517
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "stationary": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -2.6211,
+      "paired_bootstrap_95": [
+        -2.7698,
+        -2.4308
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -4.2482,
+      "paired_bootstrap_95": [
+        -4.2966,
+        -4.224
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "unlearnable": {
+    "risk_adaptive_equals_periodic": true,
+    "triad_minus_legacy_guard": {
+      "mean": -4.2528,
+      "paired_bootstrap_95": [
+        -4.3008,
+        -4.2048
+      ]
+    },
+    "triad_minus_primary_periodic": {
+      "mean": -5.76,
+      "paired_bootstrap_95": [
+        -5.76,
+        -5.76
+      ]
+    },
+    "triad_minus_triad_periodic": {
+      "mean": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Tested exact NumPy build for byte-identical Stage J replay on Python 3.13.5.
+# Historical research may work on older supported NumPy, but identical RNG
+# sequences across *different* NumPy implementations are not guaranteed.
+numpy==2.3.5

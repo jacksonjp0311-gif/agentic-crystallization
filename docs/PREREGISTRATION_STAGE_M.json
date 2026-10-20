@@ -1,0 +1,84 @@
+{
+  "blocks_per_epoch": 3,
+  "design_frozen_before_holdout": true,
+  "development_worlds": {
+    "count": 4,
+    "start_seed": 20000
+  },
+  "epochs_per_world": 12,
+  "final_holdout_worlds": {
+    "count": 24,
+    "start_seed": 51000
+  },
+  "independent_replication_worlds": {
+    "count": 8,
+    "start_seed": 81000
+  },
+  "limitations": [
+    "no Pegasus integration",
+    "finite experiment",
+    "externally supplied reward/tasks",
+    "delayed feedback cannot predict future drift",
+    "hash chain not signature",
+    "no self-generated energy/revenue"
+  ],
+  "mathematical_hypotheses": {
+    "G0": "Under independent bounded fresh observations and current-period representativeness, conditional familywise lifetime error <= alpha_promotion for one controller run across prespecified certification attempts.",
+    "G1": "Under independent trustworthy paired monitoring blocks, false deterioration alarms controlled by allocated alpha_monitor for one controller run.",
+    "G2": "Without representative feedback, no algorithm can uniformly distinguish a changed environment from an unchanged one using identical observations."
+  },
+  "mechanistic_outcomes": [
+    "fresh memory reactivation",
+    "certificate renewal",
+    "statistically supported withdrawal",
+    "procedure retirement",
+    "prediction operations",
+    "query observations"
+  ],
+  "negative_controls": [
+    "four-way parity unlearnable by <=3-way XOR",
+    "absent task labels",
+    "adversarially inverted labeled feedback",
+    "inverted true deployment"
+  ],
+  "predeclared_success_criteria": {
+    "comparison": "Compare against periodic recertification and memoryless learner, not merely fixed reuse.",
+    "monitor_capability": "At least one alarm in deliberately inverted-drift worlds; zero false alarms in stationary worlds desirable.",
+    "no_promise": "No controller required to dominate all baselines or guarantee zero deployment harm; publish negative findings.",
+    "release_integrity": "Full historical and new test suite pass, reproducibility receipt verified, and falsifying feedback regime preserved."
+  },
+  "prespecified_policies": [
+    "crystal",
+    "monitor_hold",
+    "memoryless",
+    "periodic",
+    "fixed_reuse",
+    "baseline"
+  ],
+  "prespecified_regimes": [
+    "stationary",
+    "gradual",
+    "abrupt",
+    "recurrent",
+    "inverted_drift",
+    "unlearnable",
+    "missing_feedback",
+    "misleading_feedback"
+  ],
+  "primary_endpoint": "mean net task-paired surplus per epoch; paired differences relative to all strong baselines",
+  "release": "2.1.0",
+  "safety_endpoints": [
+    "false certifications in source-period fresh validation",
+    "harmful middle/late exposure",
+    "monitor false alarm and missed true drop",
+    "untrusted feedback failure",
+    "nonnegative resource ledger"
+  ],
+  "source_hashes_sha256": {
+    "crystal_core.py": "a4c9a5a76a1d7815adce8f90f6dc23662c071dcb3a062b3d3d003c886cbe4449",
+    "renewal_core.py": "67bb929562dd82160dd6c2010c6ed5496ae4fb9da457684d60e5592bec8a662e",
+    "stage_l.py": "81fb5c2e96a907e19bef8334c009bdd83627c74a0bc30b61d9c4fb913caf29da",
+    "stage_m.py": "7b62d5f98c57fd79c8050e607a6d654f8d79fe7e439a59791ceeeaba7b857dd9"
+  },
+  "stage": "M"
+}

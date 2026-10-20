@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+<rect width="1000" height="300" fill="#102030"/><g font-family="sans-serif" fill="#f0f6ff">
+<text x="40" y="45" font-size="27">Agentic Crystallization · conditional evidence certification</text>
+<g stroke="#61c7d9" stroke-width="2" fill="#183b50"><rect x="35" y="85" width="260" height="100" rx="12"/>
+<rect x="365" y="85" width="270" height="100" rx="12"/><rect x="705" y="85" width="260" height="100" rx="12"/>
+<path d="M295 135H365 M635 135H705"/></g><g font-size="18">
+<text x="55" y="120">Primary · Anchor · Reference</text><text x="55" y="155">Frozen paired sample protocol</text>
+<text x="385" y="120">Validate + finite-horizon bounds</text><text x="385" y="155">Corroborate · charge audit cost</text>
+<text x="725" y="115">CERTIFY_CURRENT / HOLD</text><text x="725" y="145">STALE / ALARM</text><text x="725" y="173">Durable recommendation receipt</text>
+<text x="40" y="230">Assumptions: bounded independent samples, fixed catalog, honest reference, current context.</text>
+<text x="40" y="265" fill="#ffcf91">Agreement cannot detect shared corruption. No agent promotion or Pegasus control.</text>
+</g></g></svg>

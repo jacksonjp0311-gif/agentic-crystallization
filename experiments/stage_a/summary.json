@@ -1,0 +1,167 @@
+{
+  "additive": {
+    "no_memory": {
+      "mean": 1.5920840841538135,
+      "sd_across_worlds": 0.2756095781708718,
+      "mean_regret": 0.3617362377961984
+    },
+    "cache_only": {
+      "mean": 1.9531756226730679,
+      "sd_across_worlds": 0.2540297917692343,
+      "mean_regret": 0.0006446992769441051
+    },
+    "additive": {
+      "mean": 1.9530917298417827,
+      "sd_across_worlds": 0.25414605463006473,
+      "mean_regret": 0.0007285921082293361
+    },
+    "same_estimates_linear": {
+      "mean": 1.8971683830985775,
+      "sd_across_worlds": 0.2643512877698946,
+      "mean_regret": 0.05665193885143456
+    },
+    "interaction_aware": {
+      "mean": 1.9488870946163046,
+      "sd_across_worlds": 0.2567521306452164,
+      "mean_regret": 0.004933227333707355
+    },
+    "interaction_recovery": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positives_mean": 0
+    },
+    "structural_density_mean": 0.0
+  },
+  "pairwise": {
+    "no_memory": {
+      "mean": 2.078128143803019,
+      "sd_across_worlds": 0.3910365440569674,
+      "mean_regret": 1.1773805538078248
+    },
+    "cache_only": {
+      "mean": 3.072121229940355,
+      "sd_across_worlds": 0.3404489766085171,
+      "mean_regret": 0.18338746767048875
+    },
+    "additive": {
+      "mean": 2.2948621336879524,
+      "sd_across_worlds": 0.4463039409768141,
+      "mean_regret": 0.9606465639228914
+    },
+    "same_estimates_linear": {
+      "mean": 3.0021510168756853,
+      "sd_across_worlds": 0.4472552568631003,
+      "mean_regret": 0.2533576807351582
+    },
+    "interaction_aware": {
+      "mean": 3.253290502476328,
+      "sd_across_worlds": 0.35204161932822325,
+      "mean_regret": 0.002218195134515661
+    },
+    "interaction_recovery": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positives_mean": 0
+    },
+    "structural_density_mean": 0.11495911495911496
+  },
+  "higher_order": {
+    "no_memory": {
+      "mean": 1.6699930683369257,
+      "sd_across_worlds": 0.3328609474368173,
+      "mean_regret": 0.8542148439923294
+    },
+    "cache_only": {
+      "mean": 2.494054244009769,
+      "sd_across_worlds": 0.2977227305099538,
+      "mean_regret": 0.030153668319485984
+    },
+    "additive": {
+      "mean": 2.0388910978216765,
+      "sd_across_worlds": 0.2862403799636263,
+      "mean_regret": 0.4853168145075788
+    },
+    "same_estimates_linear": {
+      "mean": 2.2247024843675893,
+      "sd_across_worlds": 0.3508377081736127,
+      "mean_regret": 0.2995054279616659
+    },
+    "interaction_aware": {
+      "mean": 2.5201250304053837,
+      "sd_across_worlds": 0.3082383307406925,
+      "mean_regret": 0.0040828819238712954
+    },
+    "interaction_recovery": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positives_mean": 0
+    },
+    "structural_density_mean": 0.0
+  },
+  "redundancy": {
+    "no_memory": {
+      "mean": 2.3565455615856465,
+      "sd_across_worlds": 0.27194280381281016,
+      "mean_regret": 0.37561318837388596
+    },
+    "cache_only": {
+      "mean": 2.653891153196493,
+      "sd_across_worlds": 0.21712931247138595,
+      "mean_regret": 0.07826759676303924
+    },
+    "additive": {
+      "mean": 2.535529234112403,
+      "sd_across_worlds": 0.2449093814368,
+      "mean_regret": 0.19662951584712907
+    },
+    "same_estimates_linear": {
+      "mean": 2.5612147189920726,
+      "sd_across_worlds": 0.22150646932517903,
+      "mean_regret": 0.17094403096745975
+    },
+    "interaction_aware": {
+      "mean": 2.6512616602779833,
+      "sd_across_worlds": 0.22411688003269742,
+      "mean_regret": 0.08089708968154902
+    },
+    "interaction_recovery": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positives_mean": 0
+    },
+    "structural_density_mean": 0.0
+  },
+  "misleading": {
+    "no_memory": {
+      "mean": 1.4781217540104672,
+      "sd_across_worlds": 0.2621733480767314,
+      "mean_regret": 0.3993112804975434
+    },
+    "cache_only": {
+      "mean": 1.8769324239264735,
+      "sd_across_worlds": 0.2539692297740879,
+      "mean_regret": 0.0005006105815371395
+    },
+    "additive": {
+      "mean": 1.8769419439183919,
+      "sd_across_worlds": 0.2540299137494979,
+      "mean_regret": 0.0004910905896187701
+    },
+    "same_estimates_linear": {
+      "mean": 1.8261537408741166,
+      "sd_across_worlds": 0.26904802797032923,
+      "mean_regret": 0.05127929363389402
+    },
+    "interaction_aware": {
+      "mean": 1.872735822025052,
+      "sd_across_worlds": 0.2562562665205106,
+      "mean_regret": 0.0046972124829586116
+    },
+    "interaction_recovery": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positives_mean": 0
+    },
+    "structural_density_mean": 0.7477332852332852
+  }
+}

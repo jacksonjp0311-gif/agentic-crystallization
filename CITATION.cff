@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the research preview and exact commit used."
+title: "Agentic Crystallization"
+type: software
+version: "2.4.0-research-preview"
+authors:
+  - name: "Agentic Crystallization contributors"
+repository-code: "https://github.com/jacksonjp0311-gif/agentic-crystallization"
+abstract: "Synthetic research on conditional evidence certification and shared-corruption limitations."

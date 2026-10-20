@@ -1,0 +1,98 @@
+{
+  "action_library": {
+    "a": [
+      "a"
+    ],
+    "ab": [
+      "a",
+      "b"
+    ],
+    "abc": [
+      "a",
+      "b",
+      "c"
+    ],
+    "ac": [
+      "a",
+      "c"
+    ],
+    "b": [
+      "b"
+    ],
+    "baseline": [],
+    "bc": [
+      "b",
+      "c"
+    ],
+    "c": [
+      "c"
+    ],
+    "d": [
+      "d"
+    ]
+  },
+  "alpha_per_decision": 0.05,
+  "calibration_source_sha256": "cf59595fbb0d752e0552166796022f0066300364ac578cde9a26d9d0c60ce1f6",
+  "claim_scope": "Finite frozen action library; iid source samples; TV bound supplied or HOLD; no phase transition inference.",
+  "costs": "Deterministic per action, all actions measured on same calibration tasks",
+  "data_split": "Independent calibration tasks per world; oracle target values only in grader; different world IDs in development and holdout",
+  "families": [
+    "additive",
+    "pairwise",
+    "triple",
+    "misleading_graph"
+  ],
+  "per_world_seed_generator": "SHA256 seeded; world parameters frozen per seed; calibration seed additionally scenario and n",
+  "sample_sizes": [
+    200,
+    1000,
+    6400
+  ],
+  "scenarios": {
+    "bounded_shift": {
+      "declared_tv": 0.08,
+      "p": 0.1,
+      "q": 0.18,
+      "valid": true
+    },
+    "iid_related": {
+      "declared_tv": 0.0,
+      "p": 0.1,
+      "q": 0.1,
+      "valid": true
+    },
+    "iid_unrelated": {
+      "declared_tv": 0.0,
+      "p": 0.85,
+      "q": 0.85,
+      "valid": true
+    },
+    "unknown_shift": {
+      "declared_tv": null,
+      "p": 0.1,
+      "q": 0.18,
+      "valid": null
+    },
+    "violated_shift": {
+      "declared_tv": 0.05,
+      "p": 0.1,
+      "q": 0.92,
+      "valid": false
+    },
+    "wide_valid_shift": {
+      "declared_tv": 0.35,
+      "p": 0.1,
+      "q": 0.45,
+      "valid": true
+    }
+  },
+  "schema": "agentic-crystallization-stage-j/1",
+  "seeds": {
+    "count": 200,
+    "max": 4199,
+    "min": 4000
+  },
+  "stage": "development",
+  "stage_j_source_sha256": "e88c418ab392084f947f464bad2c66694c09db7d69bc4ee1679bec151df15e5d",
+  "version": "1.8.0"
+}

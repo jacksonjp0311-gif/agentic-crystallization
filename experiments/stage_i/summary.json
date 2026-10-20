@@ -1,0 +1,10 @@
+{
+  "seeds": 500,
+  "actions": 6,
+  "error_bound": 0.15,
+  "certified": 213,
+  "uncertified": 287,
+  "violations": 0,
+  "mean_regret": 0.009088952760444,
+  "interpretation": "Known bounded perturbation sanity check; zero violations follow from proved inequality, not evidence of calibrated real-world bounds."
+}

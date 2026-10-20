@@ -1,0 +1,22 @@
+{
+  "version": "2.3.0",
+  "source_sha256": {
+    "stage_o.py": "4960645092f5c6ddff832c18d743232c1d6e73258ca4caca3630bd697db336cb",
+    "feedback_integrity.py": "4769648c327275aab12c92e9c720a1e050e511926c1c139c6030f2aa59682e67",
+    "stage_n.py": "abc3953a566c5da1db6948bde011ac2fd46af0cef9644e96c9bc63f8948468df",
+    "risk_verification.py": "9b781b11c256d14c7e0840dbd464934851db0e1c9c348786e55cb67bf96c0c4b"
+  },
+  "development_seeds": [
+    4000,
+    4029
+  ],
+  "holdout_seeds": [
+    8000,
+    8119
+  ],
+  "replication_seeds": [
+    10000,
+    10059
+  ],
+  "note": "Frozen after development and before independent holdout."
+}

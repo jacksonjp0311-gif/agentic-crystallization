@@ -1,0 +1,19 @@
+{
+  "schema": "agentic-crystallization-stage-j-manifest/1",
+  "version": "1.8.0",
+  "stage": "development",
+  "world_rows": 3600,
+  "worlds_per_regime": 200,
+  "regimes": 6,
+  "sample_sizes": [
+    200,
+    1000,
+    6400
+  ],
+  "protocol_sha256": "313448688af102472db0014ad365c1e5cd6db0e8c6846355eccee51422a01e37",
+  "runs_sha256": "bb8a73754ab383788f94eca1cd01d3cf1f57a2b4a9bbd8e4fe15ab08af4df548",
+  "summary_sha256": "90df1ca94ee31016832744cdd9dbe1e1d8bc93f140762a0abb70b5697698e81f",
+  "synthetic": true,
+  "model_execution": false,
+  "interpretation": "Statistical calibration under stated assumptions; deliberate shift violation demonstrates invalid certificates."
+}

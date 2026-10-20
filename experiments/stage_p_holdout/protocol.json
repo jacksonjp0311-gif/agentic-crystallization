@@ -1,0 +1,63 @@
+{
+  "config": {
+    "alarm_backoff_cap": 4,
+    "alpha": 0.05,
+    "anchor_samples": 384,
+    "anchor_unit_cost": 0.006,
+    "epochs": 24,
+    "hazard": 0.06,
+    "max_age": 4,
+    "periodic_age": 4,
+    "primary_samples": 384,
+    "primary_unit_cost": 0.002,
+    "reference_samples": 1024,
+    "reference_unit_cost": 0.006,
+    "tasks_per_epoch": 80,
+    "use_cue": false
+  },
+  "count": 80,
+  "decision_inputs": "Observed primary, anchor, reference means only when purchased; cue, epoch, retained state; never true gains",
+  "honesty_boundary": "A truthful reference is assumed, not proven; all-channel corruption is observationally indistinguishable from some honest world",
+  "policies": [
+    "triad_adaptive",
+    "triad_periodic",
+    "triad_always",
+    "reference_periodic",
+    "reference_always",
+    "legacy_guard",
+    "primary_periodic",
+    "baseline"
+  ],
+  "regimes": [
+    "stationary",
+    "abrupt",
+    "gradual",
+    "recurrent",
+    "deceptive_primary",
+    "deceptive_anchor",
+    "common_mode",
+    "reference_corrupt",
+    "all_corrupt",
+    "missing_reference",
+    "missing_anchor",
+    "misleading_cue",
+    "unlearnable"
+  ],
+  "rows": 199680,
+  "sample_model": "Independent bounded randomized measurements conditional on the true synthetic world when channels are honest; reference independent draws",
+  "source_hashes": {
+    "adaptive_trust.py": "a1f999a5ba204f4e528c67cee9268cbc16d288ee13b159e6d118f3dc1cbd04fb",
+    "feedback_integrity.py": "4769648c327275aab12c92e9c720a1e050e511926c1c139c6030f2aa59682e67",
+    "risk_verification.py": "9b781b11c256d14c7e0840dbd464934851db0e1c9c348786e55cb67bf96c0c4b",
+    "stage_n.py": "abc3953a566c5da1db6948bde011ac2fd46af0cef9644e96c9bc63f8948468df",
+    "stage_o.py": "4960645092f5c6ddff832c18d743232c1d6e73258ca4caca3630bd697db336cb",
+    "stage_p.py": "a1d17e96d35038b1ddf6b6115372da9f30395d26e7bbee65e9c11a5194f6dc8f"
+  },
+  "stage": "P",
+  "start_seed": 9000,
+  "statistic": "finite-horizon simultaneous Hoeffding interval if channel honest; descriptive Beta(1,1) mismatch mean not calibrated trust",
+  "task": "Two whitelisted A/B procedures; no real LLM or Pegasus execution",
+  "utility": "80*true current gain minus incurred observation costs; hidden oracle is scoring only",
+  "version": "2.4.0",
+  "worlds": 1040
+}

@@ -1,0 +1,96 @@
+{
+  "0.25": {
+    "worlds": 900,
+    "no_prior": {
+      "success": 0.10555555555555556,
+      "mean_utility": -23.814777777777778,
+      "total_attempts": 280.37
+    },
+    "cache_only": {
+      "success": 0.10333333333333333,
+      "mean_utility": -23.91311111111111,
+      "total_attempts": 280.46444444444444
+    },
+    "always_reuse": {
+      "success": 0.11888888888888889,
+      "mean_utility": -23.237555555555556,
+      "total_attempts": 279.93111111111114
+    },
+    "learned_gate": {
+      "success": 0.15555555555555556,
+      "mean_utility": -21.691777777777776,
+      "total_attempts": 279.14
+    },
+    "sham_prior": {
+      "success": 0.1,
+      "mean_utility": -24.04422222222222,
+      "total_attempts": 280.4422222222222
+    },
+    "oracle_context": {
+      "success": 0.19444444444444445,
+      "mean_utility": -20.077333333333332,
+      "total_attempts": 278.5511111111111
+    },
+    "gate_minus_no_prior": {
+      "mean": 2.1229999999999998,
+      "bootstrap95": [
+        1.2949666666666666,
+        2.999558333333333
+      ]
+    },
+    "gate_minus_always_reuse": {
+      "mean": 1.545777777777778,
+      "bootstrap95": [
+        0.7454388888888889,
+        2.4173333333333336
+      ]
+    }
+  },
+  "0.75": {
+    "worlds": 900,
+    "no_prior": {
+      "success": 0.12222222222222222,
+      "mean_utility": -23.555444444444444,
+      "total_attempts": 284.4433333333333
+    },
+    "cache_only": {
+      "success": 0.11888888888888889,
+      "mean_utility": -23.700222222222223,
+      "total_attempts": 284.5577777777778
+    },
+    "always_reuse": {
+      "success": 0.3688888888888889,
+      "mean_utility": -13.155333333333333,
+      "total_attempts": 279.1088888888889
+    },
+    "learned_gate": {
+      "success": 0.3477777777777778,
+      "mean_utility": -14.061333333333334,
+      "total_attempts": 279.72444444444443
+    },
+    "sham_prior": {
+      "success": 0.12222222222222222,
+      "mean_utility": -23.583444444444446,
+      "total_attempts": 284.72333333333336
+    },
+    "oracle_context": {
+      "success": 0.4033333333333333,
+      "mean_utility": -11.712555555555555,
+      "total_attempts": 278.4588888888889
+    },
+    "gate_minus_no_prior": {
+      "mean": 9.494111111111112,
+      "bootstrap95": [
+        8.157447222222222,
+        10.795961111111113
+      ]
+    },
+    "gate_minus_always_reuse": {
+      "mean": -0.9060000000000001,
+      "bootstrap95": [
+        -1.7071972222222223,
+        -0.12080833333333299
+      ]
+    }
+  }
+}

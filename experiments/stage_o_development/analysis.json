@@ -1,0 +1,325 @@
+{
+  "comparisons": {
+    "abrupt:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -1.67595,
+        -0.77653
+      ],
+      "mean_utility_difference": -1.17396,
+      "worlds": 30
+    },
+    "abrupt:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        25.17205,
+        26.07147
+      ],
+      "mean_utility_difference": 25.67404,
+      "worlds": 30
+    },
+    "abrupt:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -1.29195,
+        -0.39253
+      ],
+      "mean_utility_difference": -0.78996,
+      "worlds": 30
+    },
+    "abrupt:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -2.44395,
+        -1.54453
+      ],
+      "mean_utility_difference": -1.94196,
+      "worlds": 30
+    },
+    "common_mode:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -0.8704,
+        -0.69973
+      ],
+      "mean_utility_difference": -0.78507,
+      "worlds": 30
+    },
+    "common_mode:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -11.35573,
+        -11.18507
+      ],
+      "mean_utility_difference": -11.2704,
+      "worlds": 30
+    },
+    "common_mode:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -0.4864,
+        -0.31573
+      ],
+      "mean_utility_difference": -0.40107,
+      "worlds": 30
+    },
+    "common_mode:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -1.6384,
+        -1.46773
+      ],
+      "mean_utility_difference": -1.55307,
+      "worlds": 30
+    },
+    "deceptive_anchor:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        14.6672,
+        15.04378
+      ],
+      "mean_utility_difference": 14.87969,
+      "worlds": 30
+    },
+    "deceptive_anchor:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        4.18187,
+        4.55844
+      ],
+      "mean_utility_difference": 4.39436,
+      "worlds": 30
+    },
+    "deceptive_anchor:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -3.61547,
+        -3.23889
+      ],
+      "mean_utility_difference": -3.40298,
+      "worlds": 30
+    },
+    "deceptive_anchor:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -23.43413,
+        -23.05756
+      ],
+      "mean_utility_difference": -23.22164,
+      "worlds": 30
+    },
+    "deceptive_primary:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -22.66613,
+        -22.28956
+      ],
+      "mean_utility_difference": -22.45364,
+      "worlds": 30
+    },
+    "deceptive_primary:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        4.18187,
+        4.55844
+      ],
+      "mean_utility_difference": 4.39436,
+      "worlds": 30
+    },
+    "deceptive_primary:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -3.61547,
+        -3.23889
+      ],
+      "mean_utility_difference": -3.40298,
+      "worlds": 30
+    },
+    "deceptive_primary:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        13.8992,
+        14.27578
+      ],
+      "mean_utility_difference": 14.11169,
+      "worlds": 30
+    },
+    "gradual:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -2.80483,
+        -1.72952
+      ],
+      "mean_utility_difference": -2.28423,
+      "worlds": 30
+    },
+    "gradual:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        14.33501,
+        14.96881
+      ],
+      "mean_utility_difference": 14.66655,
+      "worlds": 30
+    },
+    "gradual:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -2.42083,
+        -1.34552
+      ],
+      "mean_utility_difference": -1.90023,
+      "worlds": 30
+    },
+    "gradual:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -3.42043,
+        -1.84051
+      ],
+      "mean_utility_difference": -2.63741,
+      "worlds": 30
+    },
+    "misleading_cue:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -6.97654,
+        -6.54964
+      ],
+      "mean_utility_difference": -6.77444,
+      "worlds": 30
+    },
+    "misleading_cue:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        19.87146,
+        20.29836
+      ],
+      "mean_utility_difference": 20.07356,
+      "worlds": 30
+    },
+    "misleading_cue:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -6.59254,
+        -6.16564
+      ],
+      "mean_utility_difference": -6.39044,
+      "worlds": 30
+    },
+    "misleading_cue:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -7.74454,
+        -7.31764
+      ],
+      "mean_utility_difference": -7.54244,
+      "worlds": 30
+    },
+    "missing_anchor:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -1.80645,
+        -1.34498
+      ],
+      "mean_utility_difference": -1.55387,
+      "worlds": 30
+    },
+    "missing_anchor:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        7.14288,
+        7.60436
+      ],
+      "mean_utility_difference": 7.39547,
+      "worlds": 30
+    },
+    "missing_anchor:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -0.65445,
+        -0.19298
+      ],
+      "mean_utility_difference": -0.40187,
+      "worlds": 30
+    },
+    "missing_anchor:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -20.41075,
+        -19.66116
+      ],
+      "mean_utility_difference": -20.06498,
+      "worlds": 30
+    },
+    "recurrent:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        5.93214,
+        7.54126
+      ],
+      "mean_utility_difference": 6.78036,
+      "worlds": 30
+    },
+    "recurrent:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        23.44681,
+        25.05592
+      ],
+      "mean_utility_difference": 24.29502,
+      "worlds": 30
+    },
+    "recurrent:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        6.31614,
+        7.92526
+      ],
+      "mean_utility_difference": 7.16436,
+      "worlds": 30
+    },
+    "recurrent:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        5.16414,
+        6.77326
+      ],
+      "mean_utility_difference": 6.01236,
+      "worlds": 30
+    },
+    "stationary:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -1.26027,
+        -0.64853
+      ],
+      "mean_utility_difference": -0.88089,
+      "worlds": 30
+    },
+    "stationary:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        25.58773,
+        26.19947
+      ],
+      "mean_utility_difference": 25.96711,
+      "worlds": 30
+    },
+    "stationary:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -0.87627,
+        -0.26453
+      ],
+      "mean_utility_difference": -0.49689,
+      "worlds": 30
+    },
+    "stationary:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -2.02827,
+        -1.41653
+      ],
+      "mean_utility_difference": -1.64889,
+      "worlds": 30
+    },
+    "unlearnable:guard_minus_anchor_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -0.90453,
+        -0.73387
+      ],
+      "mean_utility_difference": -0.8192,
+      "worlds": 30
+    },
+    "unlearnable:guard_minus_baseline": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -2.05653,
+        -1.88587
+      ],
+      "mean_utility_difference": -1.9712,
+      "worlds": 30
+    },
+    "unlearnable:guard_minus_dual_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -0.52053,
+        -0.34987
+      ],
+      "mean_utility_difference": -0.4352,
+      "worlds": 30
+    },
+    "unlearnable:guard_minus_primary_periodic": {
+      "descriptive_paired_world_bootstrap_95pct": [
+        -1.67253,
+        -1.50187
+      ],
+      "mean_utility_difference": -1.5872,
+      "worlds": 30
+    }
+  },
+  "method": "Descriptive paired bootstrap across worlds, 3000 replicates, RNG seed 2301. Not a confirmatory confidence sequence."
+}

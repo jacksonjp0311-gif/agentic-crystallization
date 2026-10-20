@@ -1,0 +1,33 @@
+{
+  "algorithmic_claim": "No universal auditor can identify shared corruption without independent trustworthy grounds.",
+  "development_seeds": [
+    4200,
+    4217
+  ],
+  "frozen_source_hashes": {
+    "adaptive_trust.py": "a1f999a5ba204f4e528c67cee9268cbc16d288ee13b159e6d118f3dc1cbd04fb",
+    "feedback_integrity.py": "4769648c327275aab12c92e9c720a1e050e511926c1c139c6030f2aa59682e67",
+    "risk_verification.py": "9b781b11c256d14c7e0840dbd464934851db0e1c9c348786e55cb67bf96c0c4b",
+    "stage_n.py": "abc3953a566c5da1db6948bde011ac2fd46af0cef9644e96c9bc63f8948468df",
+    "stage_o.py": "4960645092f5c6ddff832c18d743232c1d6e73258ca4caca3630bd697db336cb",
+    "stage_p.py": "a1d17e96d35038b1ddf6b6115372da9f30395d26e7bbee65e9c11a5194f6dc8f"
+  },
+  "holdout_seeds": [
+    9000,
+    9079
+  ],
+  "replication_seeds": [
+    11000,
+    11039
+  ],
+  "selected": {
+    "age": 4,
+    "false_fresh_certificates": 0,
+    "harmful": 72,
+    "mean_utility": 11.820337,
+    "score": 11.7833,
+    "use_cue": false
+  },
+  "separation": "Source and tuning selection frozen before final holdout; no changes to stage_p/adaptive_trust after this file.",
+  "version": "2.4.0"
+}

@@ -1,0 +1,2 @@
+# Only direct runtime dependency; matplotlib/reportlab/pandoc are authoring tools, not required for simulation.
+numpy>=1.26,<3

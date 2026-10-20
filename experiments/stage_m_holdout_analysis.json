@@ -1,0 +1,385 @@
+{
+  "comparison": {
+    "abrupt": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          361.343753,
+          366.835233
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 364.121456,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          183.76796,
+          187.527046
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 185.741651,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          251.997112,
+          254.94859
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 253.48674,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          249.681702,
+          252.200559
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 250.943592,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          -377.559686,
+          -374.315179
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -375.95064,
+        "worlds": 24
+      }
+    },
+    "gradual": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          508.830071,
+          513.587051
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 511.152988,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          -1.041467,
+          -1.041467
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -1.041467,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          1.320453,
+          1.320453
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 1.320453,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": 0.0,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          57.568758,
+          71.645102
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 64.520013,
+        "worlds": 24
+      }
+    },
+    "inverted_drift": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          -285.077503,
+          -282.774284
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -283.932974,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          238.719438,
+          241.632507
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 240.195488,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          241.084171,
+          244.050819
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 242.557408,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          -13.5632,
+          -12.4512
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -13.02944,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          -371.823544,
+          -369.456932
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -370.653228,
+        "worlds": 24
+      }
+    },
+    "misleading_feedback": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          -527.11099,
+          -523.239333
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -525.169929,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          -1.041467,
+          -1.041467
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -1.041467,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          1.320453,
+          1.320453
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 1.320453,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": 0.0,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          -613.950047,
+          -609.676222
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -611.890182,
+        "worlds": 24
+      }
+    },
+    "missing_feedback": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          109.141566,
+          114.08613
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 111.606937,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          -3.268073,
+          0.943732
+        ],
+        "fraction_worlds_crystal_better": 0.416667,
+        "mean_paired_utility_per_epoch": -1.146546,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          -0.888792,
+          3.260513
+        ],
+        "fraction_worlds_crystal_better": 0.583333,
+        "mean_paired_utility_per_epoch": 1.215374,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": 0.0,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          -629.333117,
+          -626.43159
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -627.800393,
+        "worlds": 24
+      }
+    },
+    "recurrent": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          719.019321,
+          723.161651
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 721.080419,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          231.27662,
+          233.71834
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 232.458551,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          20.806837,
+          21.720098
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 21.265214,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          20.71774,
+          21.484376
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 21.080213,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          -20.56868,
+          -19.725389
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -20.147068,
+        "worlds": 24
+      }
+    },
+    "stationary": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          751.007137,
+          755.430797
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 753.191182,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          -1.041467,
+          -1.041467
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -1.041467,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          1.320453,
+          1.320453
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 1.320453,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": 0.0,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          12.862173,
+          13.240253
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 13.045653,
+        "worlds": 24
+      }
+    },
+    "unlearnable": {
+      "baseline": {
+        "descriptive_bootstrap_95pct": [
+          206.463987,
+          210.40515
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 208.471104,
+        "worlds": 24
+      },
+      "fixed_reuse": {
+        "descriptive_bootstrap_95pct": [
+          -6.972626,
+          -2.043869
+        ],
+        "fraction_worlds_crystal_better": 0.208333,
+        "mean_paired_utility_per_epoch": -4.539079,
+        "worlds": 24
+      },
+      "memoryless": {
+        "descriptive_bootstrap_95pct": [
+          -3.769821,
+          -2.350341
+        ],
+        "fraction_worlds_crystal_better": 0.041667,
+        "mean_paired_utility_per_epoch": -3.054543,
+        "worlds": 24
+      },
+      "monitor_hold": {
+        "descriptive_bootstrap_95pct": [
+          -3.4464,
+          -2.95712
+        ],
+        "fraction_worlds_crystal_better": 0.0,
+        "mean_paired_utility_per_epoch": -3.224,
+        "worlds": 24
+      },
+      "periodic": {
+        "descriptive_bootstrap_95pct": [
+          18.877632,
+          21.686379
+        ],
+        "fraction_worlds_crystal_better": 1.0,
+        "mean_paired_utility_per_epoch": 20.290893,
+        "worlds": 24
+      }
+    }
+  },
+  "interventions": "none; policies share seeded episodes and independent proposed actions",
+  "replicates": 3000,
+  "source_csv_sha256": "5eeaa7d34365cdbfcc7f0fe2c1da41f73e6fe06740918dec801e58cbec26c9e8",
+  "status": "descriptive 95% world bootstrap; not preregistered confirmatory intervals",
+  "unit_of_resampling": "independent synthetic world seed"
+}

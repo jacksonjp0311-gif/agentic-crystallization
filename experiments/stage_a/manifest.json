@@ -1,0 +1,47 @@
+{
+  "schema": "agentic-crystallization-stage-a/1",
+  "version": "1.0.0",
+  "seed_list": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "sizes": [
+    8,
+    10,
+    12
+  ],
+  "families": [
+    "additive",
+    "pairwise",
+    "higher_order",
+    "redundancy",
+    "misleading"
+  ],
+  "policies": [
+    "no_memory",
+    "cache_only",
+    "additive",
+    "same_estimates_linear",
+    "interaction_aware"
+  ],
+  "train_noise_uniform": 0.02,
+  "test_count_per_world": 80,
+  "selected_procedures": 4,
+  "available_procedures": 7,
+  "train_design": "complete factorial subsets of order <=3; identical for all policies",
+  "test_design": "fresh held-out availability masks; oracle world fixed; no model inference",
+  "interaction_max_order": 3,
+  "threshold": 0.25,
+  "results": "runs.csv",
+  "limitation": "Synthetic planted interactions; no causal discovery in real agents; no phase-transition claim; R/D/E proxies only, S and K unmeasured."
+}

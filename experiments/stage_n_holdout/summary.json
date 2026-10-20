@@ -1,0 +1,713 @@
+{
+  "abrupt": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 2400,
+      "harmful_deployments": 0,
+      "holds": 0,
+      "mean_utility": 26.464,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1013,
+      "holds": 0,
+      "mean_utility": 4.29933,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 207,
+      "mean_utility": 25.201,
+      "stale_deployments": 1593,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1600,
+      "holds": 0,
+      "mean_utility": -9.39733,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 0,
+      "mean_utility": 27.616,
+      "stale_deployments": 1800,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 769,
+      "epochs": 2400,
+      "fresh_certifications": 769,
+      "harmful_deployments": 13,
+      "holds": 0,
+      "mean_utility": 27.20451,
+      "stale_deployments": 1631,
+      "total_audit_cost": 1181.184,
+      "worlds": 100
+    }
+  },
+  "deceptive_audit": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 2399,
+      "harmful_deployments": 1600,
+      "holds": 1,
+      "mean_utility": -10.881,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1011,
+      "holds": 0,
+      "mean_utility": 4.346,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 1482,
+      "holds": 184,
+      "mean_utility": -9.11067,
+      "stale_deployments": 1616,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1600,
+      "holds": 0,
+      "mean_utility": -9.39733,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 1600,
+      "holds": 0,
+      "mean_utility": -9.71733,
+      "stale_deployments": 1800,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 757,
+      "epochs": 2400,
+      "fresh_certifications": 756,
+      "harmful_deployments": 1600,
+      "holds": 4,
+      "mean_utility": -9.86448,
+      "stale_deployments": 1640,
+      "total_audit_cost": 1162.752,
+      "worlds": 100
+    }
+  },
+  "gradual": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 1693,
+      "harmful_deployments": 0,
+      "holds": 707,
+      "mean_utility": 16.91872,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 98,
+      "harmful_deployments": 946,
+      "holds": 48,
+      "mean_utility": 4.26044,
+      "stale_deployments": 2254,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 438,
+      "harmful_deployments": 0,
+      "holds": 1120,
+      "mean_utility": 13.68211,
+      "stale_deployments": 842,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 98,
+      "harmful_deployments": 1078,
+      "holds": 48,
+      "mean_utility": 1.07933,
+      "stale_deployments": 2254,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 438,
+      "harmful_deployments": 0,
+      "holds": 648,
+      "mean_utility": 17.41933,
+      "stale_deployments": 1314,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 1385,
+      "epochs": 2400,
+      "fresh_certifications": 779,
+      "harmful_deployments": 0,
+      "holds": 713,
+      "mean_utility": 17.49443,
+      "stale_deployments": 908,
+      "total_audit_cost": 2127.36,
+      "worlds": 100
+    }
+  },
+  "misleading_cue": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 2399,
+      "harmful_deployments": 0,
+      "holds": 1,
+      "mean_utility": 26.45233,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1179,
+      "holds": 0,
+      "mean_utility": 0.426,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 1704,
+      "mean_utility": 7.736,
+      "stale_deployments": 96,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1600,
+      "holds": 0,
+      "mean_utility": -9.39733,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 0,
+      "mean_utility": 27.616,
+      "stale_deployments": 1800,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 2187,
+      "epochs": 2400,
+      "fresh_certifications": 2186,
+      "harmful_deployments": 103,
+      "holds": 2,
+      "mean_utility": 24.17365,
+      "stale_deployments": 212,
+      "total_audit_cost": 3359.232,
+      "worlds": 100
+    }
+  },
+  "missing_cue": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 2395,
+      "harmful_deployments": 0,
+      "holds": 5,
+      "mean_utility": 26.40567,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1600,
+      "holds": 0,
+      "mean_utility": -9.39733,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 599,
+      "harmful_deployments": 0,
+      "holds": 4,
+      "mean_utility": 27.56933,
+      "stale_deployments": 1797,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1600,
+      "holds": 0,
+      "mean_utility": -9.39733,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 599,
+      "harmful_deployments": 0,
+      "holds": 4,
+      "mean_utility": 27.56933,
+      "stale_deployments": 1797,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 1200,
+      "epochs": 2400,
+      "fresh_certifications": 1195,
+      "harmful_deployments": 0,
+      "holds": 10,
+      "mean_utility": 27.11533,
+      "stale_deployments": 1195,
+      "total_audit_cost": 1843.2,
+      "worlds": 100
+    }
+  },
+  "recurrent": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 2398,
+      "harmful_deployments": 0,
+      "holds": 2,
+      "mean_utility": 26.44067,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 971,
+      "holds": 0,
+      "mean_utility": 5.27933,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 206,
+      "holds": 324,
+      "mean_utility": 19.02933,
+      "stale_deployments": 1476,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1200,
+      "holds": 0,
+      "mean_utility": -0.064,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 400,
+      "holds": 0,
+      "mean_utility": 18.28267,
+      "stale_deployments": 1800,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 857,
+      "epochs": 2400,
+      "fresh_certifications": 857,
+      "harmful_deployments": 64,
+      "holds": 0,
+      "mean_utility": 25.95819,
+      "stale_deployments": 1543,
+      "total_audit_cost": 1316.352,
+      "worlds": 100
+    }
+  },
+  "stationary": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 2398,
+      "harmful_deployments": 0,
+      "holds": 2,
+      "mean_utility": 26.44067,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 921,
+      "holds": 0,
+      "mean_utility": 6.446,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 170,
+      "mean_utility": 25.63267,
+      "stale_deployments": 1630,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 0,
+      "holds": 0,
+      "mean_utility": 27.936,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 0,
+      "mean_utility": 27.616,
+      "stale_deployments": 1800,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 734,
+      "epochs": 2400,
+      "fresh_certifications": 734,
+      "harmful_deployments": 0,
+      "holds": 0,
+      "mean_utility": 27.53024,
+      "stale_deployments": 1666,
+      "total_audit_cost": 1127.424,
+      "worlds": 100
+    }
+  },
+  "unannounced_abrupt": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 2399,
+      "harmful_deployments": 0,
+      "holds": 1,
+      "mean_utility": 26.45233,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 990,
+      "holds": 0,
+      "mean_utility": 4.836,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 170,
+      "mean_utility": 25.63267,
+      "stale_deployments": 1630,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 100,
+      "harmful_deployments": 1600,
+      "holds": 0,
+      "mean_utility": -9.39733,
+      "stale_deployments": 2300,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 600,
+      "harmful_deployments": 0,
+      "holds": 0,
+      "mean_utility": 27.616,
+      "stale_deployments": 1800,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 722,
+      "epochs": 2400,
+      "fresh_certifications": 722,
+      "harmful_deployments": 60,
+      "holds": 0,
+      "mean_utility": 26.13792,
+      "stale_deployments": 1678,
+      "total_audit_cost": 1108.992,
+      "worlds": 100
+    }
+  },
+  "unlearnable": {
+    "always": {
+      "audits": 2400,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": -1.536,
+      "stale_deployments": 0,
+      "total_audit_cost": 3686.4,
+      "worlds": 100
+    },
+    "baseline": {
+      "audits": 0,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": 0.0,
+      "stale_deployments": 0,
+      "total_audit_cost": 0.0,
+      "worlds": 100
+    },
+    "cue_switch": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": -0.064,
+      "stale_deployments": 0,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "monitor_hold": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": -0.384,
+      "stale_deployments": 0,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "never": {
+      "audits": 100,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": -0.064,
+      "stale_deployments": 0,
+      "total_audit_cost": 153.6,
+      "worlds": 100
+    },
+    "periodic": {
+      "audits": 600,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": -0.384,
+      "stale_deployments": 0,
+      "total_audit_cost": 921.6,
+      "worlds": 100
+    },
+    "risk": {
+      "audits": 731,
+      "epochs": 2400,
+      "fresh_certifications": 0,
+      "harmful_deployments": 0,
+      "holds": 2400,
+      "mean_utility": -0.46784,
+      "stale_deployments": 0,
+      "total_audit_cost": 1122.816,
+      "worlds": 100
+    }
+  }
+}

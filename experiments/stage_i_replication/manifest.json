@@ -1,0 +1,9 @@
+{
+  "source": "agentic_crystallization.stability",
+  "seed_start": 0,
+  "seed_end": 499,
+  "n_actions": 6,
+  "eps": 0.3,
+  "oracle": "known random truth, bounded independent perturbation",
+  "status": "synthetic"
+}

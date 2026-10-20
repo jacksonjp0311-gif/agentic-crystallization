@@ -1,0 +1,22 @@
+{
+  "holdout": {
+    "byte_identical": true,
+    "files": {
+      "SHA256SUMS.json": "88933bca58fc38cc6ef2b079ee7ac368370d2804d57a0ea1be19192c321f1203",
+      "protocol.json": "17650533ecb5b14ac5d65b24b14cbd9b6cdb0ac7e06bc4690616a6a248e54b68",
+      "runs.csv": "602ee802078e380a46707c9d3d75fc5dfddb4c2604e784b5f2051a678dc673af",
+      "summary.json": "b60e66e431a1ce8bb9810b87098fc22b6c5a068f665dea80534ac6f7b3f73521"
+    },
+    "rows": 199680
+  },
+  "replication": {
+    "byte_identical": true,
+    "files": {
+      "SHA256SUMS.json": "c1f7512edceada7dbab62d35a3aca03149cac810df5f6685172d81bc4d6f378d",
+      "protocol.json": "ae8750d65f9772583a70a1a4a8497913d5fa177c37a5949ec158de9515673524",
+      "runs.csv": "a39137c3cf9537f56a754752c280e3de56ab64bec6071d448b9d897bc4ed6b5e",
+      "summary.json": "e980b7959511bdc8db89f84bcf8e46445e691294e1bebab036780d91a74dde9e"
+    },
+    "rows": 99840
+  }
+}

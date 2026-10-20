@@ -1,0 +1,31 @@
+{
+  "schema": "agentic-crystallization-stage-k-replay/1",
+  "status": "byte_identical",
+  "heldout_rows": 2800,
+  "seed_start": 60000,
+  "worlds_per_regime": 400,
+  "files": {
+    "protocol.json": {
+      "original_sha256": "42d6bbf71387833ae6aac50433b9b7ac00d8d49a4ed86c78925a51791f8522a9",
+      "replayed_sha256": "42d6bbf71387833ae6aac50433b9b7ac00d8d49a4ed86c78925a51791f8522a9",
+      "byte_identical": true
+    },
+    "runs.csv": {
+      "original_sha256": "26cc519f5d8edeac9c54bcd0ea5f478baaff9c77e1a7941b7932f8cc5aaf3915",
+      "replayed_sha256": "26cc519f5d8edeac9c54bcd0ea5f478baaff9c77e1a7941b7932f8cc5aaf3915",
+      "byte_identical": true
+    },
+    "summary.json": {
+      "original_sha256": "3b6ce837e4d46232a5ab2b2bf65368c03279b01734ebbafa9b2a1197558aafec",
+      "replayed_sha256": "3b6ce837e4d46232a5ab2b2bf65368c03279b01734ebbafa9b2a1197558aafec",
+      "byte_identical": true
+    },
+    "manifest.json": {
+      "original_sha256": "c9027607cdda7fe1e023c979bad3ca6325b8b58150cc08b455ae709d58228105",
+      "replayed_sha256": "c9027607cdda7fe1e023c979bad3ca6325b8b58150cc08b455ae709d58228105",
+      "byte_identical": true
+    }
+  },
+  "runtime": "Python 3.13 / NumPy 2.3.5",
+  "note": "Exact deterministic synthetic replay, not external validation."
+}
