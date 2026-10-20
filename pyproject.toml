@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agentic-crystallization"
-version = "2.4.0rc1"
+version = "2.4.0rc2"
 description = "Conditional finite-horizon evidence certification; synthetic research preview"
 readme = "README.md"
 requires-python = ">=3.10"

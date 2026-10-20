@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import subprocess
 import zipfile
+from restore_test_archive import restore, NAME
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -13,9 +14,11 @@ def main():
     names=[n for n in names if n and not n.endswith(".zip")]
     if not names:
         raise ValueError("Stage reviewed repository files before packaging")
+    restore()
+    names.append(NAME)
     out=ROOT/"dist"
     out.mkdir(exist_ok=True)
-    destination=out/"Agentic_Crystallization_2.4_RESEARCH_PREVIEW.zip"
+    destination=out/"Agentic_Crystallization_2.4_REPRODUCTION_rc2.zip"
     hashes={n:hashlib.sha256((ROOT/n).read_bytes()).hexdigest() for n in names}
     with zipfile.ZipFile(destination,"w",zipfile.ZIP_DEFLATED) as z:
         for n in names:

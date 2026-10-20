@@ -73,18 +73,18 @@ class ExternalEvidenceTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/"receipts.sqlite"
             ledger=ReceiptLedger(path);e=example();r=self.check(e)
-            ledger.record(e,r)
+            ledger.record(e,r,now=10,current_epoch=0,current_context="demo-context")
             self.assertEqual(ReceiptLedger(path).replay(),[json.loads(r.to_json())])
-            with self.assertRaises(ValueError):ledger.record(e,r)
+            with self.assertRaises(ValueError):ledger.record(e,r,now=10,current_epoch=0,current_context="demo-context")
             new=replace(e,protocol=replace(e.protocol,identity="new-protocol"))
-            with self.assertRaises(ValueError):ledger.record(new,self.check(new))
+            with self.assertRaises(ValueError):ledger.record(new,self.check(new),now=10,current_epoch=0,current_context="demo-context")
             self.assertEqual(len(ledger.replay()),1)
 
     def test_receipt_mismatch(self):
         with tempfile.TemporaryDirectory() as d:
             ledger=ReceiptLedger(Path(d)/"r.sqlite")
             with self.assertRaises(ValueError):
-                ledger.record(example(),replace(self.check(),evidence_digest="forged"))
+                ledger.record(example(),replace(self.check(),evidence_digest="forged"),now=10,current_epoch=0,current_context="demo-context")
 
     def test_no_host_permissions(self):
         import inspect

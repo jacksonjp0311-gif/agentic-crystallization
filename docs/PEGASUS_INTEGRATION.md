@@ -1,4 +1,19 @@
-# Pegasus integration specification — plan only
+# Pegasus integration — rc2 isolated adapter status
+
+The subsequent hardening task authorized an implementation. An optional read-only adapter
+now exists on PEGASUS branch `feature/agentic-crystallization-readonly`, based on inspected
+remote main `f1383e14fc677b7d2bee52946f4f99a60e933da3`. It is unmerged and uninstalled.
+It is not registered in startup, tools or UI. Disabled mode performs no evidence reads.
+An enabled call accepts one host-authorized export and governed campaign/protocol allocation,
+then emits an auditable recommendation with no authority. Native execution receipts without
+paired measurements return HOLD/`missing_paired_measurement_contract`.
+Synthetic contract tests are not real Pegasus task validation.
+See the adapter branch's `docs/CRYSTALLIZATION-ADAPTER.md` and this package's API.md.
+
+The following is the preserved initial planning record; its implementation status was
+superseded by the explicitly authorized rc2 task.
+
+## Initial specification — plan only
 
 Status: NO IMPLEMENTATION, NO INSTALLATION, NO PEGASUS MODIFICATIONS.
 

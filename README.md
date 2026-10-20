@@ -114,7 +114,7 @@ agentic-crystallization/
 ## Independent Python package preview
 
 Install with `python -m pip install .` or run `./run.ps1 -Action setup`.
-The research algorithm remains v2.4; packaging metadata is 2.4.0rc1.
+The research algorithm remains v2.4; packaging metadata is 2.4.0rc2.
 Historical `agentic_crystallization.__version__` is preserved; use
 `importlib.metadata.version("agentic-crystallization")` for the installed distribution version.
 See [external evidence API](docs/API.md), [architecture](docs/ARCHITECTURE.md),
@@ -140,3 +140,19 @@ then a separately authorized read-only Pegasus adapter trial.
 Private research preview. No public license selected and no public publication authorized.
 Public release remains HOLD pending license approval, review of release evidence and explicit approval.
 Use [CITATION.cff](CITATION.cff) and cite the exact commit.
+
+
+## rc2 hardening and consumer safety
+
+Read [API schema 2](docs/API.md), [versioned hardening audit](docs/HARDENING_AUDIT_2.4_RC2.md)
+and [release checklist](docs/RELEASE_CHECKLIST.md). Research mathematics remains v2.4.
+Use `ReceiptLedger.evaluate_and_record` with trusted current context. Stored receipts never
+authorize actions. Replayed records are historical; bounds do not accumulate across calls.
+Host-owned campaign allocation is required across protocols; labels do not prove new data.
+Audit cost accounting is separate from deciding whether acquiring evidence was worthwhile.
+
+The lightweight wheel/source distribution omits research data. For the complete historical
+suite, use the reproduction bundle containing the original v1.9 fixture, or explicitly restore
+that ZIP after cloning. See [unprivileged reproduction](docs/REPRODUCIBILITY.md).
+No write-capable credentials are required to use a local complete bundle.
+Public anonymous asset access remains unverified while the repository is private.

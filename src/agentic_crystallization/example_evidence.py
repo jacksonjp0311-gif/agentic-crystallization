@@ -7,7 +7,7 @@ def example() -> Evidence:
                         "demo-context", 24, .05, (1024, 1024, 1024), 0,
                         "Illustration: fixed paired draws from a frozen task distribution",
                         "Illustration only: independently justified honest reference required",
-                        True, True)
+                        True, True, "synthetic-evaluator-v1")
     rows = tuple(Measurement(f"{channel}-{candidate}", candidate, "fallback",
                             channel, "synthetic-example", (gain,)*1024, -1, 1, 2, 3, .1)
                  for channel in CHANNELS for candidate, gain in (("A", .8), ("B", -.8)))
