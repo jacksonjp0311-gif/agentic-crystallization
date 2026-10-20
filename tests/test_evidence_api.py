@@ -59,6 +59,9 @@ class ExternalEvidenceTests(unittest.TestCase):
     def test_audit_cost(self):
         self.assertAlmostEqual(self.check().verification_cost,.6)
         self.assertEqual(self.check(self.changed(verification_cost=-1)).status,"HOLD")
+        e=example()
+        invalid=replace(e,measurements=e.measurements[:-1]+(replace(e.measurements[-1],candidate="unknown"),))
+        self.assertIsNone(self.check(invalid).verification_cost)
 
     def test_pre_audit_and_fixed_design(self):
         e=example()

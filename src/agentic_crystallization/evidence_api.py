@@ -108,11 +108,15 @@ def evaluate(evidence: Evidence, *, now: float, current_epoch: int,
     p = evidence.protocol if isinstance(evidence, Evidence) else None
 
     def result(status, reason, selected=None):
+        accounted = reason in (
+            "conditional_current_certificate", "channel_disagreement_quarantine",
+            "insufficient_separation", "uncorroborated_winner",
+            "epoch_context_or_expiry_changed", "invalid_current_context")
         return Receipt("agentic-crystallization/evidence/1", status, reason, selected,
                        digest, protocol_digest,
                        evidence.epoch if isinstance(evidence, Evidence) and type(evidence.epoch) is int else None,
                        p.context if isinstance(p, Protocol) and _text(p.context) else None,
-                       cost, now, bounds,
+                       cost if accounted else None, now, bounds,
                        ("External provenance and honesty are assumed, not verified.",
                         "Fixed catalog/counts; independent bounded within-stream observations.",
                         "Agreement cannot exclude shared corruption.",
