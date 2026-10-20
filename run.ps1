@@ -1,8 +1,9 @@
 [CmdletBinding()]
 param(
- [ValidateSet('setup','test','verify','demo','reproduce','package','status','simulate')]
+ [ValidateSet('setup','fixtures','test','verify','demo','reproduce','package','status','simulate')]
  [string]$Action='status',
  [string]$Python='python',
+ [string]$Fixture='',
  [int]$StartSeed=90000,
  [int]$Worlds=1
 )
@@ -29,10 +30,16 @@ try {
   if(!(Test-Path -LiteralPath $venv)){Invoke-Python -m venv .venv}
   $script:runner=$venv
   Invoke-Python -m pip install . build
+  if($Fixture){Invoke-Python scripts/restore_test_archive.py --source $Fixture}
+  else {Invoke-Python scripts/restore_test_archive.py}
  } else {
   if(Test-Path -LiteralPath $venv){$script:runner=$venv}
   switch($Action) {
-   test {Invoke-Python -m unittest discover -s tests -v}
+   fixtures {
+    if($Fixture){Invoke-Python scripts/restore_test_archive.py --source $Fixture}
+    else {Invoke-Python scripts/restore_test_archive.py}
+   }
+   test {Invoke-Python scripts/restore_test_archive.py; Invoke-Python -m unittest discover -s tests -v}
    verify {Invoke-Python scripts/research_verify.py}
    reproduce {Invoke-Python scripts/reproduce.py}
    package {Invoke-Python -m build; Invoke-Python scripts/package.py}

@@ -12,7 +12,7 @@ from scripts.verify_stage_p import verify
 def main():
     manifest=json.loads((ROOT/"docs/provenance/ORIGINAL_PACKAGE_SHA256SUMS.json").read_text())
     checked=0;archives=[];bytecode=[]
-    remapped={"README.md":"docs/provenance/original_README.md","run.ps1":"docs/provenance/original_run.ps1"}
+    remapped={"README.md":"docs/provenance/original_README.md","run.ps1":"docs/provenance/original_run.ps1","CHANGELOG.md":"docs/provenance/original_CHANGELOG.md"}
     for name, expected in manifest["files"].items():
         if name.endswith(".pyc"):
             bytecode.append(name)

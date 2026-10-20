@@ -13,9 +13,16 @@ import math
 from pathlib import Path
 import sqlite3
 from typing import Literal
+from .api_version import API_SCHEMA, IMPLEMENTATION_VERSION, RESEARCH_VERSION
 
 Status = Literal["CERTIFY_CURRENT", "HOLD", "STALE", "ALARM"]
 CHANNELS = ("primary", "anchor", "reference")
+MAX_SAMPLES = 16384
+MAX_TOTAL_SAMPLES = 6 * MAX_SAMPLES
+MAX_TEXT = 4096
+MAX_TEXT_BYTES = 65536
+MAX_EPOCHS = 1000000
+MAX_INTEGER = 2**53 - 1
 
 
 @dataclass(frozen=True)
@@ -33,6 +40,8 @@ class Protocol:
     reference_assumption: str
     independent_within_stream: bool
     fixed_before_observation: bool
+    evaluator_revision: str = ""
+    gain_semantics: str = "reward_gain"
 
 
 @dataclass(frozen=True)
@@ -74,6 +83,8 @@ class Receipt:
     evaluated_at: float
     bounds: dict
     assumptions: tuple[str, ...]
+    implementation_version: str = IMPLEMENTATION_VERSION
+    research_version: str = RESEARCH_VERSION
 
     def to_json(self) -> str:
         return json.dumps(asdict(self), sort_keys=True, allow_nan=False)
@@ -85,11 +96,95 @@ def _digest(value) -> str:
 
 
 def _number(x) -> bool:
-    return type(x) in (int, float) and math.isfinite(x)
+    return ((type(x) is int and x.bit_length() <= 53 and abs(x) <= MAX_INTEGER)
+            or (type(x) is float and math.isfinite(x)))
 
 
 def _text(x) -> bool:
-    return isinstance(x, str) and bool(x.strip()) and len(x) <= 4096
+    return type(x) is str and len(x) <= MAX_TEXT and bool(x.strip())
+
+
+def _structure(e) -> bool:
+    """Fixed-depth shape walk: no user-controlled recursive traversal or methods.
+
+    Reject containers at primitive leaves. Cycles/nesting cannot enter this shape.
+    Length limits precede iteration; exact classes exclude behavioral subclasses.
+    At most 98,304 numeric leaves and 65,536 UTF-8 text bytes are visited.
+    """
+    if type(e) is not Evidence:
+        return False
+    text_bytes = 0
+
+    def texts(obj, names):
+        nonlocal text_bytes
+        for name in names:
+            value = getattr(obj, name)
+            if not _text(value):
+                return False
+            text_bytes += len(value.encode("utf-8"))
+            if text_bytes > MAX_TEXT_BYTES:
+                return False
+        return True
+
+    def numbers(obj, names):
+        return all(_number(getattr(obj, name)) for name in names)
+
+    try:
+        p = e.protocol
+        if type(p) is not Protocol:
+            return False
+        if not texts(p, ("identity", "baseline", "task", "context", "sampling_design",
+                         "reference_assumption", "evaluator_revision", "gain_semantics")):
+            return False
+        if type(p.candidates) is not tuple or len(p.candidates) != 2:
+            return False
+        for value in p.candidates:
+            if not _text(value):
+                return False
+            text_bytes += len(value.encode("utf-8"))
+        if (type(p.sample_counts) is not tuple or len(p.sample_counts) != 3
+                or any(type(n) is not int or not 1 <= n <= MAX_SAMPLES for n in p.sample_counts)
+                or type(p.epochs) is not int or not 1 <= p.epochs <= MAX_EPOCHS
+                or type(e.epoch) is not int or not 0 <= e.epoch < p.epochs
+                or type(p.independent_within_stream) is not bool
+                or type(p.fixed_before_observation) is not bool
+                or p.gain_semantics not in ("reward_gain", "net_task_utility_gain")):
+            return False
+        if not numbers(p, ("alpha", "committed_at")) or not numbers(
+                e, ("audit_requested_at", "reference_revealed_at", "expires_at")):
+            return False
+        if type(e.measurements) is not tuple or len(e.measurements) != 6:
+            return False
+        total = 0
+        for m in e.measurements:
+            if type(m) is not Measurement:
+                return False
+            if not texts(m, ("receipt_id", "candidate", "baseline", "channel", "provenance")):
+                return False
+            if not numbers(m, ("lower", "upper", "started_at", "ended_at", "verification_cost")):
+                return False
+            if type(m.samples) is not tuple or not 1 <= len(m.samples) <= MAX_SAMPLES:
+                return False
+            total += len(m.samples)
+            if total > MAX_TOTAL_SAMPLES or any(not _number(x) or not -1 <= x <= 1 for x in m.samples):
+                return False
+        return text_bytes <= MAX_TEXT_BYTES
+    except (AttributeError, UnicodeError):
+        return False
+
+
+def _matches(expected, actual):
+    """Compare only the bounded shape of a locally computed receipt."""
+    if type(expected) is not type(actual):
+        return False
+    if type(expected) is dict:
+        return (len(expected) == len(actual) and all(type(k) is str for k in actual) and all(
+            k in actual and _matches(v, actual[k]) for k, v in expected.items()))
+    if type(expected) in (list, tuple):
+        return len(expected) == len(actual) and all(_matches(a, b) for a, b in zip(expected, actual))
+    if type(expected) is str:
+        return len(expected) == len(actual) and expected == actual
+    return expected == actual
 
 
 def evaluate(evidence: Evidence, *, now: float, current_epoch: int,
@@ -101,6 +196,10 @@ def evaluate(evidence: Evidence, *, now: float, current_epoch: int,
     """
     if not _number(now) or now < 0:
         raise ValueError("A finite nonnegative trusted evaluation time is required")
+    if not _structure(evidence):
+        return Receipt(API_SCHEMA, "HOLD", "invalid_bounded_structure", None,
+                       "not_computed", "not_computed", None, None, None, now, {},
+                       ("Evidence rejected before serialization; no certification.",))
     digest = "unserializable"
     protocol_digest = "unserializable"
     cost = None
@@ -112,7 +211,7 @@ def evaluate(evidence: Evidence, *, now: float, current_epoch: int,
             "conditional_current_certificate", "channel_disagreement_quarantine",
             "insufficient_separation", "uncorroborated_winner",
             "epoch_context_or_expiry_changed", "invalid_current_context")
-        return Receipt("agentic-crystallization/evidence/1", status, reason, selected,
+        return Receipt(API_SCHEMA, status, reason, selected,
                        digest, protocol_digest,
                        evidence.epoch if isinstance(evidence, Evidence) and type(evidence.epoch) is int else None,
                        p.context if isinstance(p, Protocol) and _text(p.context) else None,
@@ -226,11 +325,24 @@ class ReceiptLedger:
             db.execute("CREATE TABLE IF NOT EXISTS samples (identity TEXT PRIMARY KEY, digest TEXT)")
             db.execute("CREATE TABLE IF NOT EXISTS protocols (identity TEXT PRIMARY KEY, digest TEXT)")
 
-    def record(self, evidence: Evidence, receipt: Receipt) -> None:
-        if _digest(asdict(evidence)) != receipt.evidence_digest:
-            raise ValueError("Receipt/evidence mismatch")
-        if _digest(asdict(evidence.protocol)) != receipt.protocol_digest:
-            raise ValueError("Protocol mismatch")
+    def evaluate_and_record(self, evidence: Evidence, *, now: float,
+                            current_epoch: int, current_context: str) -> Receipt:
+        """Preferred trusted entry point. A stored result grants no authority."""
+        receipt = evaluate(evidence, now=now, current_epoch=current_epoch,
+                           current_context=current_context)
+        self._insert(evidence, receipt)
+        return receipt
+
+    def record(self, evidence: Evidence, receipt: Receipt, *, now: float,
+               current_epoch: int, current_context: str) -> None:
+        """Compatibility path: require trusted context and compare every decision field."""
+        expected = evaluate(evidence, now=now, current_epoch=current_epoch,
+                            current_context=current_context)
+        if type(receipt) is not Receipt or not _matches(asdict(expected), vars(receipt)):
+            raise ValueError("Receipt differs from trusted recomputation")
+        self._insert(evidence, expected)
+
+    def _insert(self, evidence: Evidence, receipt: Receipt) -> None:
         # Store only validated complete evaluations, not malformed attempts.
         if receipt.reason not in ("conditional_current_certificate", "channel_disagreement_quarantine",
                                   "insufficient_separation", "uncorroborated_winner",

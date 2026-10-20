@@ -1,28 +1,47 @@
-# Reproducibility
+# Reproducing the v2.4 research with rc2 tooling
 
-Use Python 3.10+ with NumPy. `run.ps1 -Action setup` creates `.venv`.
-`test` runs every historical and API regression. `verify` checks preserved source/data hashes
-and reconciles both Stage P cohorts. `reproduce` regenerates both complete cohorts into
-`work/reproduction` and compares raw CSV bytes and parsed JSON summaries/protocols, refusing overwrite.
-Windows JSON newline encoding differs from the historical LF serialization; generated
-hash manifests are verified against generated files. `python scripts/reproduce.py --resume`
-verifies existing output and generates missing cohorts without overwriting.
-`demo` writes a separate single-seed synthetic trial. `package` builds a wheel and source
-distribution and a repository ZIP with a checksum manifest. `status` shows Git state.
+## Two distributions
+The wheel and source distribution are a lightweight installable library. They do not contain
+the frozen research corpus or historical fixtures. The complete reproduction bundle
+`Agentic_Crystallization_2.4_REPRODUCTION_rc2.zip` contains current source, tests, research
+documents/data and the exact v1.9 ZIP required by the unchanged protected historical test.
+Other historical version ZIPs remain separate release assets; they are not needed for this suite.
+Every bundle member is bound by RESEARCH_SHA256SUMS.json.
 
-For portable operation: `python -m pip install .`, `python -m unittest discover -s tests -v`,
-`python scripts/research_verify.py`, `python scripts/reproduce.py`.
-Use `python -m agentic_crystallization.stage_p --out work/demo --count 1 --max-age 4 --no-cue`
-for a standalone demo. Never rerun into frozen experiment directories.
+Extract the complete bundle, then:
+```
+python -m pip install .
+python scripts/verify_bundle.py
+python scripts/restore_test_archive.py
+python -m unittest discover -s tests -v
+python scripts/research_verify.py
+python scripts/reproduce.py
+```
+No Git credentials or Git checkout are needed for these checks.
 
-Original package inventory is `docs/provenance/ORIGINAL_PACKAGE_SHA256SUMS.json`.
-Fresh Git clones need the original v1.9 ZIP for an unchanged historical test:
-run `python scripts/restore_test_archive.py` with `GH_TOKEN` push access to this
-private repository, or place the verified original ZIP at its documented path.
-CI fetches this fixture from the private release asset and verifies its original hash.
-GitHub requires push access to view unpublished draft assets. An isolated GET-only
-CI preparation job has that permission; test/build jobs remain read-only. Pull requests
-use the base revision's preparation script. Fork PRs cannot access the private draft.
-Original README and entry point are preserved there too. Git omits nested ZIP archives;
-their digests stay in the provenance manifest and their bytes remain in the recovery package.
-The exact original package verifier remains available for extracted original archives.
+## Git clone fixture setup
+For a lightweight Git clone, obtain the original v1.9 ZIP from a complete bundle or your
+original package, then run:
+```
+python scripts/restore_test_archive.py --source PATH_TO_ORIGINAL_ZIP
+```
+Windows root workflow: `./run.ps1 -Action setup -Fixture PATH_TO_ORIGINAL_ZIP`;
+or `./run.ps1 -Action fixtures -Fixture PATH_TO_ORIGINAL_ZIP` after library setup.
+`test` verifies the fixture before running tests. Corruption refuses overwrite; missing or
+unavailable inputs explain recovery. SHA256 is checked before installing bytes.
+An explicitly supplied HTTPS `--url` can fetch a published asset without credentials.
+No default anonymous download is promised: this repository and release remain private.
+Public asset availability is a publication gate still to execute after authorization.
+`--draft` is an explicit private-CI preparation path, not required by ordinary bundle users.
+
+## Verification and builds
+`./run.ps1 -Action verify` verifies preserved research hashes and both Stage P cohorts.
+`reproduce` regenerates complete holdout/replication without overwriting frozen data;
+`python scripts/reproduce.py --resume` verifies existing generated output and fills only
+missing cohorts. Raw CSVs must be byte-identical; JSON contents must match, allowing Windows
+CRLF serialization. Generated manifests must verify their own files.
+`package` builds wheel/source and the complete bundle (requires Git and the fixture).
+`python scripts/check_distribution.py` installs the wheel in a fresh environment outside the
+checkout with source overrides removed, extracts the bundle without credentials, verifies
+its manifest and fixture, and runs the complete tests and research-integrity checks.
+Original source/data identity remains in docs/provenance/ORIGINAL_PACKAGE_SHA256SUMS.json.

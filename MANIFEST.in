@@ -1,0 +1,7 @@
+include README.md pyproject.toml requirements.txt
+recursive-include src *.py
+prune tests
+prune experiments
+prune archive
+prune docs
+prune work

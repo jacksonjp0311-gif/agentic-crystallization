@@ -1,3 +1,13 @@
+# Packaging/API hardening — 2.4.0rc2
+
+Research algorithm remains v2.4. API schema advances to evidence/2.
+Bound structure/resources before serialization; recompute caller receipts with trusted
+context; provide trusted evaluate-and-record; fix clone/bundle fixture setup; record explicit
+evaluator, gain semantics and implementation identity. Add resource, tampering, concurrent
+duplicate, rollback/restart and unprivileged distribution regressions.
+No new mathematics, cost optimizer, campaign lifetime guarantee or agent improvement claim.
+Historical changelog follows unchanged; original bytes preserved in provenance.
+
 ## v2.4.0 — Independent Audit and Mathematical Cooling
 
 - Preserved v2.3 source/tests/reports and its complete SHA256-verified ZIP.
