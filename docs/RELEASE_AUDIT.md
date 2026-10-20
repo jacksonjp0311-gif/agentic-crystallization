@@ -28,6 +28,9 @@ synthetic example. The root PowerShell test, verify and demo commands passed.
 Wheel/source distribution construction and repository packaging are separate build steps.
 GitHub CI tests Windows/Linux with Python 3.10/3.12 and regenerates both Stage P cohorts.
 Exact remote CI status and commit are recorded in the final delivery report.
+Initial remote CI exposed an omitted historical ZIP fixture; the historical test
+remains unchanged. CI now restores the private release asset and verifies its original
+manifest SHA256 before executing the suite. The initial reproduction job passed.
 
 ## Reproduction
 

@@ -16,6 +16,10 @@ Use `python -m agentic_crystallization.stage_p --out work/demo --count 1 --max-a
 for a standalone demo. Never rerun into frozen experiment directories.
 
 Original package inventory is `docs/provenance/ORIGINAL_PACKAGE_SHA256SUMS.json`.
+Fresh Git clones need the original v1.9 ZIP for an unchanged historical test:
+run `python scripts/restore_test_archive.py` with `GH_TOKEN` read access to this
+private repository, or place the verified original ZIP at its documented path.
+CI fetches this fixture from the private release asset and verifies its original hash.
 Original README and entry point are preserved there too. Git omits nested ZIP archives;
 their digests stay in the provenance manifest and their bytes remain in the recovery package.
 The exact original package verifier remains available for extracted original archives.
