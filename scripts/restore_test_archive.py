@@ -29,7 +29,7 @@ def main():
         return
     token=os.environ.get("GH_TOKEN")
     if not token:
-        raise RuntimeError("Historical fixture missing. Supply GH_TOKEN with repository read access or restore the original ZIP manually.")
+        raise RuntimeError("Historical fixture missing. Supply GH_TOKEN with draft-release access or restore the original ZIP manually.")
     headers={"Authorization":"Bearer "+token,"User-Agent":"agentic-crystallization-research","Accept":"application/vnd.github+json"}
     with urllib.request.urlopen(urllib.request.Request(RELEASE_API,headers=headers),timeout=30) as response:
         assets=json.load(response)

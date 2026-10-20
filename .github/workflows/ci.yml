@@ -3,7 +3,30 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  historical-fixture:
+    # GitHub requires push access even to read assets on an unpublished draft.
+    # This isolated job performs GETs only; test/build jobs retain read access.
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/restore_test_archive.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: historical-fixture
+          path: docs/archive/Agentic_Crystallization_1.9_VERIFIED.zip
+          retention-days: 1
   research:
+    needs: historical-fixture
     strategy:
       fail-fast: false
       matrix:
@@ -16,9 +39,11 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install . build
+      - uses: actions/download-artifact@v4
+        with:
+          name: historical-fixture
+          path: docs/archive
       - run: python scripts/restore_test_archive.py
-        env:
-          GH_TOKEN: ${{ github.token }}
       - run: python -m unittest discover -s tests -v
       - run: python scripts/research_verify.py
       - run: python -m build
